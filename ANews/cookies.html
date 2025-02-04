@@ -1,0 +1,767 @@
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><link rel="shortcut icon" href="i/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon-precomposed" href="https://i.tmgrup.com.tr/anews/site/v2i/apple-icon.png">
+    <link rel="icon" href="https://i.tmgrup.com.tr/anews/site/v2/i/favicon.png">
+
+    
+
+
+    <!-- CSS Files -->
+
+    
+
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/aNews2017.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/swiper-bundle.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/mobil-app-v2.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/jquery.fancybox.css?v=19274" /> 
+
+
+
+
+
+    <!-- Scripts -->
+
+    
+
+    <script>
+        function tmdCheckConsent(category) {
+            try {
+                if (getCookie('tmd_gdpr') == '0' || getCookie('tmd_gdpr') == '1') {
+                    if (typeof Cookiebot !== 'undefined') {
+                        if (Cookiebot) {
+                            if (Cookiebot.consent) {
+                                if (!Cookiebot.consent[category]) {
+                                    return false;
+                                }
+                            }
+                            else {
+                                var cookiebotConsentCookie = getCookie('CookieConsent');
+                                if (cookiebotConsentCookie && cookiebotConsentCookie.indexOf(category + ':false') > -1) {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (ex) { }
+            return true;
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+        }
+    </script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/tmd-consent/j/tmdconsent-v2.2.js?v=19274" ></script>
+
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/base.min.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/swiper-bundle.min.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/jquery.fancybox.pack.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v1/j/jquery.cookie.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v1/j/bootstrap.min.js?v=19274" ></script>
+
+    
+    <script>
+        if (typeof GlobalVariables === 'undefined')
+        GlobalVariables = {};
+
+        if (typeof GlobalVariables.CustomDimensions === 'undefined')
+            GlobalVariables.CustomDimensions = {};
+
+        var _ga4TitleFilter = "";
+        var _ga4DocumentTitle = "";
+
+               _ga4DocumentTitle = document.title; 
+
+        sendDataToGTM(JSON.stringify(GlobalVariables.CustomDimensions) === JSON.stringify({}) ? null : GlobalVariables.CustomDimensions);
+
+        function sendDataToGTM(customDimensions, url) {
+                  _ga4DocumentTitle = document.title; 
+
+            window.dataLayer = window.dataLayer || [];
+            if (customDimensions)
+            {
+                try
+                {
+                    dataLayer.push({
+                        page: {
+                            'page_path': url || document.location.pathname + document.location.search,
+                            'page_title': _ga4DocumentTitle
+                        },
+                        content: {
+                            item_name: customDimensions['dimension' + 4],
+                            item_id: customDimensions['dimension' + 2],
+                            content_type: customDimensions['dimension' + 5],
+                            item_category: customDimensions['dimension' + 1],
+                            editor_id: customDimensions['dimension' + 6],
+                            author_id: customDimensions['dimension' + 8],
+                            source_type: customDimensions['dimension' + 7],
+                            publish_date: customDimensions['dimension' + 3]
+                        }
+                    })
+                }
+                catch (e) {
+                   console.error(e);
+                }
+            }
+            else {
+                try {
+                   dataLayer.push
+			       ({
+			          	page: {
+                               'page_title': _ga4DocumentTitle,
+			          		   'page_path': url || document.location.pathname + document.location.search
+                               }
+			       })
+                } catch (e) {
+                    console.error(e);
+                }
+
+            }
+
+
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGHGM4L3');</script>
+    <!-- End Google Tag Manager -->
+
+
+        <script src="https://i.tmgrup.com.tr/tmd/mobile-detect/md2.min.js?v=735" type="text/javascript"></script><script src="https://i.tmgrup.com.tr/tmd/tmdbr.min.js?v=735" type="text/javascript"></script>
+    
+                    <script type="text/javascript">
+                        <!--//--><![CDATA[//><!--
+                         if(typeof tmdCheckConsent === 'undefined' || tmdCheckConsent('statistics')){ 
+                        var gemiusIds = { Web: '0ss1lOLAldicvoxVuRQ20mZWj33No1r.P1ezU_ccHF3.P7', Mobile: '0ms1lONAldicJCXngZZ72GYk7xDNLBrcqRfDu3SrxGn.R7' };
+                        var pp_gemius_identifier = (deviceInfo.isMobile ? gemiusIds.Mobile : gemiusIds.Web);
+                        var gemius_disable_back_cache_hits = true;
+                        // lines below shouldn't be edited
+                        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+                        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+                        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+                        gt.src=l+'://tr.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script'); } 
+                        //--><!]]>
+                    </script>
+
+    <script async=async src=https://securepubads.g.doubleclick.net/tag/js/gpt.js></script><script async=async src=https://static.criteo.net/js/ld/publishertag.js></script><script>function bdGetCookie(n){for(var i,r=n+"=",u=r.length,f=document.cookie.length,t=0;f>t;){if(i=t+u,document.cookie.substring(t,i)==r)return bdGetCookieVal(i);if(0==(t=document.cookie.indexOf(" ",t)+1))break}return null}function bdGetCookieVal(n){var t=document.cookie.indexOf(";",n);return-1==t&&(t=document.cookie.length),unescape(document.cookie.substring(n,t))}function bdDeleteCookie(n,t,i){bdGetCookie(n)&&(document.cookie=n+"="+(t?"; path="+t:"")+(i?"; domain="+i:"")+"; expires=Thu, 01-Jan-70 00:00:01 GMT")}function bdSetCookie(n,t,i,r,u,f){document.cookie=n+"="+escape(t)+(i?"; expires="+i:"")+(r?"; path="+r:"")+(u?"; domain="+u:"")+(f?"; secure":"")}function bdGetDocumentHeight(){return $(window).height()}function bdHide970x250(){googletag.pubads().clear([bdSlots.slot_d_970x250]);$("#id_d_970x250").prepend('<div class="slot_control" style="float:right; cursor:pointer; font-size:small; font-family:sans-serif; background-color:rgba(0, 0, 0, 0.1); padding:1px 5px 1px 5px; color:rgba(94, 102, 81, 0.85); " onClick="bdShow970x250();">Reklamı Göster<\/div>');$("#id_d_970x250").show();$("#id_d_970x250").css("margin-bottom","25px")}function bdShow970x250(){$(".slot_control").length>0&&$(".slot_control").remove();googletag.cmd.push(function(){bdSlots.slot_d_970x250.clearTargeting();googletag.pubads().refresh([bdSlots.slot_d_970x250])});$("#id_d_970x250").css("margin-bottom","15px")}</script><script>var googletag=googletag||{},bdSlots;googletag.cmd=googletag.cmd||[];bdSlots=bdSlots||{};googletag.cmd.push(function(){deviceInfo.isMobile?(bdSlots.slot_m_300x250=googletag.defineSlot("/31110078/anews/mobile_web/sitegeneli/300x250",[300,250],"id_m_300x250").addService(googletag.pubads()),bdSlots.slot_m_300x250_2=googletag.defineSlot("/31110078/anews/mobile_web/sitegeneli/300x250_2",[300,250],"id_m_300x250_2").addService(googletag.pubads()),bdSlots.slot_m_custombox=googletag.defineSlot("/31110078/anews/mobile_web/sitegeneli/custombox",[[320,142],[320,100],[320,50]],"id_m_custombox").addService(googletag.pubads()),bdSlots.slot_m_po=googletag.defineOutOfPageSlot("/31110078/anews/mobile_web/sitegeneli/pageoverlay","id_m_po").addService(googletag.pubads())):(deviceInfo.isMobile||deviceInfo.isTablet||(bdSlots.slot_d_pageskin_master=googletag.defineSlot("/31110078/anews/desktop_web/sitegeneli/pageskin_master",[[500,1e3],[160,600],[120,600]],"id_d_ps_left").addService(googletag.pubads()),bdSlots.slot_d_pageskin_companion_right=googletag.defineSlot("/31110078/anews/desktop_web/sitegeneli/pageskin_companion_right",[[160,600],[120,600],[500,1001]],"id_d_ps_right").addService(googletag.pubads()),bdSlots.slot_d_pageskin_companion_top=googletag.defineSlot("/31110078/anews/desktop_web/sitegeneli/pageskin_companion_top",[1,1],"id_d_ps_top").addService(googletag.pubads())),bdSlots.slot_d_970x250=googletag.defineSlot("/31110078/anews/desktop_web/sitegeneli/970x250",[[970,250],[970,90],[970,91],[970,350]],"id_d_970x250").addService(googletag.pubads()),bdSlots.slot_d_300x250=googletag.defineSlot("/31110078/anews/desktop_web/sitegeneli/300x250",[300,250],"id_d_300x250").addService(googletag.pubads()),bdSlots.slot_d_po=googletag.defineOutOfPageSlot("/31110078/anews/desktop_web/sitegeneli/pageoverlay","id_d_po").addService(googletag.pubads()));googletag.pubads().enableSingleRequest();googletag.pubads().disableInitialLoad();googletag.pubads().collapseEmptyDivs(!0);googletag.pubads().addEventListener("slotRenderEnded",function(n){var r=$("#"+n.slot.getSlotElementId()),i,t;n.slot==bdSlots.slot_d_pageskin_companion_right&&n.campaignId==389705318&&window.addEventListener("scroll",function(){$("#id_d_ps_right").css("top",-document.documentElement.scrollTop)});n.slot==bdSlots.slot_d_pageskin_companion_top&&n.isEmpty&&($("._pageSkinTop").remove(),console.log("_pageskinTop removed!"));n.slot==bdSlots.slot_d_970x250?(console.log("elementId:"+n.slot.getSlotElementId()+" campaignId: "+n.campaignId),n.isEmpty||n.size[1]==350||n.size[1]==91||n.size[1]==90||(i='<div class="slot_control" style="float:right; cursor:pointer; font-size:small; font-family:sans-serif; background-color:rgba(0, 0, 0, 0.1); padding:1px 5px 1px 5px; color:rgba(94, 102, 81, 0.85); " onClick="bdHide970x250();">Reklamı Kapat<\/div>',r.prepend(i))):n.slot==bdSlots.slot_d_728x90&&(n.isEmpty||(t=$(".advertControlArea").height()+90,$(".pageSkinRight").css({top:t}),$(".pageSkinLeft").css({top:t})))});googletag.enableServices()})</script><script>var e={},crtTimeout=600,launchAdServer;window.Criteo=window.Criteo||{};window.Criteo.events=window.Criteo.events||[];Criteo.events.push(function(){(window.location.pathname.split("/").length>2||deviceInfo.isMobile)&&(crtTimeout=1e3);e=deviceInfo.isMobile?{placements:[{slotid:"id_m_300x250",zoneid:1174204},{slotid:"id_m_custombox",zoneid:1174208},{slotid:"id_m_textlink",zoneid:1214046}]}:{placements:[{slotid:"id_d_300x250",zoneid:1174204},{slotid:"id_d_970x250",zoneid:1174206},{slotid:"id_d_textlink",zoneid:1199455},{slotid:"id_d_300x600",zoneid:1174205},{slotid:"id_d_ps_left",zoneid:1174203},{slotid:"id_d_ps_right",zoneid:1174203}]};Criteo.SetLineItemRanges("0..10:0.01;10..25:0.05;25..50:0.10;50..100:0.25");Criteo.RequestBids(e,launchAdServer,crtTimeout)});launchAdServer=function(){googletag.cmd.push(function(){Criteo.SetDFPKeyValueTargeting();googletag.pubads().refresh()})}</script>
+    
+</head>
+<body class="">
+
+    
+
+<script defer type="text/javascript" src="https://i.tmgrup.com.tr/contactus/j/contactus.js?v=735"></script>
+    <script type="text/javascript">
+                var tmdContactUs_PID = 19;
+                var tmdContactUs_PageType = 'Statik';
+    </script>
+<a href="/Contact?pageType=Statik" class="stickyLink" contactus-popup="" id="contactLink">Contact Us</a>
+
+
+
+
+
+
+    <!-- topAdvert -->
+    <div class="topAdvert">
+        <div class="in">
+            <div data-mbzone="728x90" data-wbzone="728x90"></div>
+        </div>
+    </div>
+
+    
+
+
+<header class="sticker">
+    <div class="container">
+        <a href="/" class="logo"> <img src="https://i.tmgrup.com.tr/anews/site/v2/i/a-news-logo.png" alt="" /> </a>
+        <a href="/webtv/live-broadcast" class="live onlyMobile"></a>
+        <span class="mobileMenuIcon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <div class="topFrame">
+
+            <nav class="menuWrapper">
+                
+                <ul id="menu" class="items">
+                    <li>
+                        <a href="/world"> WORLD</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/islamic-world">Islamic World </a>
+                            </li>
+                            <li>
+                                <a href="/africa">Africa</a>
+                            </li>
+                            <li>
+                                <a href="/americas">Americas</a>
+                            </li>
+                            <li>
+                                <a href="/asia">Asia</a>
+                            </li>
+                            <li>
+                                <a href="/australia">Australia</a>
+                            </li>
+                            <li>
+                                <a href="/europe">Europe</a>
+                            </li>
+                            <li>
+                                <a href="/middle-east">Middle East</a>
+                            </li>
+                            <li>
+                                <a href="/turkey">Türkiye</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/politics"> POLITICS</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/turkish-politics">Turkish Politics</a>
+                            </li>
+                            <li>
+                                <a href="/us-politics">U.S. Politics</a>
+                            </li>
+                            <li>
+                                <a href="/european-union">European Union</a>
+                            </li>
+                            <li>
+                                <a href="/anti-terror-fight">Anti-terror fight</a>
+                            </li>
+                            <li>
+                                <a href="/islamophobia">Islamophobia</a>
+                            </li>
+                            <li>
+                                <a href="/diplomacy">Diplomacy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/economy"> ECONOMY</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/tech">Tech</a>
+                            </li>
+                            <li>
+                                <a href="/business">Business</a>
+                            </li>
+                            <li>
+                                <a href="/food">Food</a>
+                            </li>
+                            <li>
+                                <a href="/travel">Travel</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sport"> SPORTS</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/football">Football</a>
+                            </li>
+                            <li>
+                                <a href="/basketball">Basketball</a>
+                            </li>
+                            <li>
+                                <a href="/tennis">Tennis</a>
+                            </li>
+                            <li>
+                                <a href="/motorsport">Motorsport</a>
+                            </li>
+                            <li>
+                                <a href="/others">Others</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/magazine"> MAGAZINE</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/celebrities">Celebrities</a>
+                            </li>
+                            <li>
+                                <a href="/screen">Screen</a>
+                            </li>
+                            <li>
+                                <a href="/entertainment">Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="/cinema">Cinema</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/art"> ART</a>
+                    </li>
+                    <li>
+                        <a href="/health"> HEALTH</a>
+                    </li>
+                    <li>
+                        <a href="/webtv"> VIDEOS</a>
+                    </li>
+                    <li>
+                        <a href="/gallery"> PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="/webtv/live-broadcast"> LIVE TV</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="headerTools">
+                <ul class="topSocial">
+                    <li>
+                        <span><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/anews" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/anews" target="_blank"><i class="fa fa-x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/aNews/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://flipboard.com/@ANEWS2019" target="_blank"><img src="https://i.tmgrup.com.tr/anews/site/v2/i/flipboard-icon.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/ANewsGlobal" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="/rss-bilgi" target="_blank"><i class="fa fa-rss"></i></a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+                <!-- topSocial End -->
+                <div class="topSearch">
+                    <div class="searchbox">
+                        <input type="search" placeholder="Search.." name="search" class="searchbox-input" id="txtSearch" onkeydown="if(event.keyCode==13) Search();">
+                        <input type="submit" class="searchbox-submit" value="">
+                        <span class="searchbox-icon fa fa-search"></span>
+                    </div>
+                </div>
+                <!-- topSearch End -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ************* HEADER END ************** -->
+
+<script>
+    $(document).ready(function () {
+
+        $('.menuWrapper ul li').each(function (index, element) {
+
+            var elem = $(this).find('a').first();
+            var catUrl = "/cookies";
+            if (elem.attr('href') == catUrl) {
+                $(this).addClass('active');
+                return false;
+            }
+        });
+    });
+</script>
+
+
+    
+
+<div class="subFrame">
+
+    <div class="newsContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 bg-white">
+                    <div class="col-xs-12 ">
+
+                        <h3 class="title-sm"><span>COOKIES PRIVACY</span></h3>
+                    </div>
+                    <!--start-->
+                    <div class="col-sm-8 default-static">
+                        <p>Çerez Politikası (aşağıda kısaca <strong>"Politika" </strong>olarak anılacaktır.) TURKUVAZ HABERLEŞME VE YAYINCILIK A.Ş. (aşağıda kısaca <strong>"Turkuvaz" </strong>olarak anılacaktır.) tarafından hazırlanmıştır ve internet sitemiz (aşağıda kısaca <strong>"İnternet Sitesi" </strong>olarak anılacaktır.) <strong>Kişisel Verilerin Korunması Kanunu Kapsamında Aydınlatma Metni </strong>ekini oluşturmaktadır. Turkuvaz bu Politika'yı internet sitesinde hangi Çerezlerin kullanıldığını açıklamak amacıyla hazırlamıştır.</p>
+
+<p><strong>ÇEREZ NEDİR?</strong></p>
+
+<p>Çerezler, tarayıcınız tarafından bilgisayarınızın sabit diskinde saklanan küçük bilgilerdir. Genellikle ziyaret ettiğiniz internet sitesini kullanmanız sırasında size kişiselleştirilmiş bir deneyim sunmak, sunulan hizmetleri geliştirmek ve deneyiminizi iyileştirmek için kullanılır ve bir internet sitesinde gezinirken kullanım kolaylığına katkıda bulunabilir.</p>
+
+<p><strong>ÇEREZ TÜRLERİ NELERDİR?</strong></p>
+
+<p>Çerezler kullanım ömrü, kullanım amacı ve çerezin sahibi veya çerez yerleştiren tarafa göre çeşitli ayrımlara tabi tutulurlar.</p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:189px;">
+			<p align="center"><strong>Kullanım Ömrüne Göre</strong></p>
+			</td>
+			<td style="width:227px;">
+			<p align="center"><strong>Kullanım Amacına Göre</strong></p>
+			</td>
+			<td style="width:189px;">
+			<p align="center"><strong>Çerezin Sahibi veya Çerez Yerleştiren Tarafa Göre</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:189px;">
+			<ul>
+				<li>Oturum çerezleri</li>
+				<li>Kalıcı çerezler</li>
+			</ul>
+			</td>
+			<td style="width:227px;">
+			<ul>
+				<li>Zorunlu/Teknik Çerezler</li>
+				<li>Analitik Çerezleri</li>
+				<li>İşlevsel/Fonksiyonel Çerezler</li>
+				<li>Hedefleme/Reklam Çerezleri</li>
+			</ul>
+			</td>
+			<td style="width:189px;">
+			<ul>
+				<li>Birinci Parti Çerezler</li>
+				<li>Üçüncü Parti Çerezler</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong><u>KULLANIM ÖMRÜNE GÖRE ÇEREZLER</u></strong></p>
+
+<ul>
+	<li><strong>Oturum Çerezi</strong>: Bir internet sitesini ziyaret ettiğiniz esnada oluşturulan ve ziyaret süreniz boyunca kullanılan, tarayıcı penceresi kapatılana kadar geçerli olan çerezlerdir. Bu tür çerezlerin amacı, ziyaretinizin sürekliliğini ve güvenliliğini sağlamaktır.</li>
+</ul>
+
+<p>Örneğin, birden fazla sayfadan oluşan çevrimiçi formların doldurulmasını sağlar.</p>
+
+<ul>
+	<li><strong>Kalıcı Çerezler:</strong> Bir internet sitesini ilk ziyaretinizde oluşturulur, kullanım ömrüne bağlı olarak veya siz silinceye kadar sabit diskinizde kalır. Bu tür çerezlerin amacı, ziyaretçilere daha hızlı ve iyi bir hizmet sunarak site işlevselliğini arttırmaktır.</li>
+</ul>
+
+<p>Örneğin, ziyaretçi tercihlerini hatırlayarak, iletilecek içeriğin bu tercihler doğrultusunda belirlenmesi.</p>
+
+<p><strong><u>KULLANIM AMACINA GÖRE ÇEREZLER</u></strong></p>
+
+<ul>
+	<li><strong>Zorunlu/Teknik Çerezler: </strong>Ziyaret ettiğiniz internet sitesinin düzgün şekilde çalışabilmesi için zorunlu çerezlerdir. Bu tür çerezlerin amacı, sitenin çalışmasını sağlamak yoluyla gerekli hizmet sunmaktır.</li>
+</ul>
+
+<p>Örneğin, internet sitesinin güvenli bölümlerine erişmeye, özelliklerini kullanabilmeye, üzerinde gezinti yapabilmeye olanak verir.</p>
+
+<ul>
+	<li><strong>Analitik Çerezler: </strong>İnternet sitesinin kullanım şekli, ziyaret sıklığı ve sayısı, hakkında bilgi toplayan ve ziyaretçilerin siteye nasıl geçtiğini gösterirler. Bu tür çerezlerin kullanım amacı, sitenin işleyiş biçimini iyileştirerek performans arttırmak ve genel eğilim yönünü belirlemektir. Ziyaretçi kimliklerinin tespitini sağlayabilecek verileri içermezler.</li>
+</ul>
+
+<p>Örneğin, gösterilen hata mesajı sayısı veya en çok ziyaret edilen sayfaları gösterirler.</p>
+
+<ul>
+	<li><strong>İşlevsel/Fonksiyonel Çerezler</strong>: Ziyaretçinin site içerisinde yaptığı seçimleri kaydederek bir sonraki ziyarette hatırlar. Bu tür çerezlerin amacı ziyaretçilere kullanım kolaylığı sağlamaktır.
+
+	<p>Örneğin, site kullanıcısının ziyaret ettiği her bir sayfada kullanıcı şifresini tekrar girmesini önler.</p>
+	</li>
+	<li><strong>Hedefleme/Reklam Çerezleri: </strong>Ziyaretçilere sunulan reklamların etkinliğinin ölçülmesi ve kaç kere izlendiğinin hesaplanmasını sağlarlar. Bu tür çerezlerin amacı, ziyaretçilerin ilgi alanlarına özelleştirilmiş reklamların sunulmasıdır.</li>
+	<li>
+	<p>Örneğin, ziyaretçiye gösterilen reklamın kısa süre içinde tekrar gösterilmesini engeller.</p>
+
+	<p><strong><u>ÇEREZİN SAHİBİ VEYA ÇEREZ YERLEŞTİREN TARAFA GÖRE ÇEREZLER</u></strong></p>
+	</li>
+	<li><strong>Birinci Parti Çerezler: </strong>Ziyaretçisi olunan internet sitesi tarafından tanımlanan ve sadece bu site tarafından okunabilen çerezlerdir.</li>
+	<li><strong>Üçüncü Parti Çerezler: </strong>Ziyaretçisi olunan internet sitesi dışındaki organizasyonlarla tanımlanan ve tanımlandığı hizmete dair siteye raporlama yapılmasını sağlayan çerezlerdir.<br>
+	<br>
+	<strong>İNTERNET SİTEMİZDE KULLANILAN ÇEREZLER</strong></li>
+	<li>
+	<p>Sitelerimizin kullandığı zorunlu, fonksiyonel ve analitik çerezler:</p>
+	</li>
+	<li>İnternet sitesi arayüzünün ve özelliklerinin arzu edildiği gibi kullanılması için zorunludur.</li>
+	<li>Gelecekte bulunacağınız ziyaretler sırasındaki faaliyetleri hızlandırmanızı sağlar.</li>
+	<li>İnternet sitesinin ziyaretçiler tarafından nasıl kullanıldığını anlamamızı sağlayarak, istatistiki verileri bir araya getirmemize ve bu veriler doğrultusunda içerik geliştirmemize yardımcı olur.</li>
+	<li>Hiçbir koşulda kimliğinizi tanımlayabileceğimiz verileri toplamaz, saklamaz ve işlememizi sağlamaz, kişisel veri niteliği taşımaz.</li>
+	<li>Bilgisayarınıza zarar vermez ve virüs içermez.</li>
+	<li>
+	<p>Hedefleme ve reklamcılık çerezleri ise reklamları kişiselleştirmek ve site trafiğini analiz etmek amacıyla, temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatlerimiz kapsamında ve gerekli hukuki taahhütleri alınmış olarak kullanılmaktadır.</p>
+
+	<p><strong>ÇEREZ TERCİHLERİ NASIL YÖNETİLİR?</strong></p>
+
+	<p>Çerezlerin kullanımına ilişkin tercihlerinizi değiştirmek ya da çerezleri engellemek veya silmek için tarayıcınızın ayarlarını değiştirmeniz yeterlidir.</p>
+
+	<p>Birçok tarayıcı çerezleri kontrol edebilmeniz için size çerezleri kabul etme veya reddetme, yalnızca belirli türdeki çerezleri kabul etme ya da bir internet sitesinin cihazınıza çerez depolamayı talep ettiğinde tarayıcı tarafından uyarılma seçeneği sunar.</p>
+
+	<p>Aynı zamanda, daha önce tarayıcınıza kaydedilmiş çerezlerin silinmesi de mümkündür.</p>
+
+	<p>Çerezleri devre dışı bırakır veya reddederseniz, bazı tercihleri ​​manuel olarak ayarlamanız gerekebilir, hesabınızı tanıyamayacağımız ve ilişkilendiremeyeceğimiz için internet sitesindeki bazı özellikler ve hizmetler düzgün çalışmayabilir. Tarayıcınızın ayarlarını aşağıdaki tablodan ilgili link'e tıklayarak değiştirebilirsiniz.</p>
+
+	<table align="center" border="1" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td style="width:104px;height:60px;">
+				<p align="center">Google Chrome</p>
+				</td>
+				<td style="width:500px;height:60px;">
+				<p><a href="http://www.google.com/support/chrome/bin/answer.py?hl=en&amp;answer=95647" rel="nofollow">http://www.google.com/support/chrome/bin/answer.py?hl=en&amp;answer=95647</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:104px;">
+				<p align="center">Internet Explorer</p>
+				</td>
+				<td style="width:500px;">
+				<p><a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies%20" rel="nofollow">https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:104px;">
+				<p align="center">MozillaFirefox</p>
+				</td>
+				<td style="width:500px;">
+				<p><a href="http://support.mozilla.com/en-US/kb/Cookies%20" rel="nofollow">http://support.mozilla.com/en-US/kb/Cookies</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:104px;">
+				<p align="center">Opera</p>
+				</td>
+				<td style="width:500px;">
+				<p><a href="http://www.opera.com/browser/tutorials/security/privacy/%20" rel="nofollow">http://www.opera.com/browser/tutorials/security/privacy/</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:104px;">
+				<p align="center">Safari</p>
+				</td>
+				<td style="width:500px;">
+				<p><a href="https://support.apple.com/kb/ph19214?locale=tr_TR%20" rel="nofollow">https://support.apple.com/kb/ph19214?</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:104px;">
+				<p align="center">Microsoft Edge</p>
+				</td>
+				<td style="width:500px;">
+				<p><a href="https://support.microsoft.com/tr-tr/help/17442/windows-internet-explorer-delete-manage-cookies" rel="nofollow">https://support.microsoft.com/tr-tr/help/17442/windows-internet-explorer-delete-manage-cookies</a></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div style="clear:both;"> </div>
+
+	<p>Çerezlerin nasıl yerleştirildiği, nasıl görüleceği ve nasıl yönetilip silineceği dahil olmak üzere çerezler hakkında daha fazla bilgi almak için <strong><a href="http://www.allaboutcookies.org" rel="nofollow">www.allaboutcookies.org</a></strong> veya <strong><a href="http://www.aboutcookies.org" rel="nofollow">www.aboutcookies.org</a></strong> sayfalarını ziyaret edebilir, Politika ile ilgili tüm soru ve görüşlerinizi bize iletmek için '<strong>Bize Ulaşın</strong>' bölümünü kullanabilirsiniz.</p>
+	</li>
+</ul>
+                        <p> </p>
+
+                        <p> </p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="advert " data-showifexist><div data-mbzone="300x250" data-wbzone="300x250"></div></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsContent end -->
+
+
+</div>
+<!-- subFrame end -->	
+
+    
+
+    
+<footer>
+    <div class="footerRow">
+        <div class="container">
+            <a href="/" class="footLogo"><img src="https://i.tmgrup.com.tr/anews/site/v2/i/a-news-logo.png" alt="" /></a>
+            <nav class="footerMenu">
+                
+                <ul>
+                    <li>
+                        <a href="/world"> WORLD</a>
+                    </li>
+                    <li>
+                        <a href="/politics"> POLITICS</a>
+                    </li>
+                    <li>
+                        <a href="/economy"> ECONOMY</a>
+                    </li>
+                    <li>
+                        <a href="/sport"> SPORTS</a>
+                    </li>
+                    <li>
+                        <a href="/magazine"> MAGAZINE</a>
+                    </li>
+                    <li>
+                        <a href="/art"> ART</a>
+                    </li>
+                    <li>
+                        <a href="/health"> HEALTH</a>
+                    </li>
+                    <li>
+                        <a href="/webtv"> VIDEOS</a>
+                    </li>
+                    <li>
+                        <a href="/gallery"> PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="/webtv/live-broadcast"> LIVE TV</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footerSocial">
+                <li><a href="https://www.facebook.com/anews" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/anews" target="_blank"><i class="fa fa-x" aria-hidden="true"></i></a></li>
+                <li><a href="/rss-bilgi"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerLiteMenu">
+        <div class="container">
+            <ul>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/terms-of-conditions">Terms of Conditions</a></li>
+                <li><a href="/cookies">Cookies</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="javascript:;" onclick="document.getElementById('contactLink').click()">Contact Us</a></li>
+                <li><a href="/frequencies">Frequencies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerLogos">
+        <div class="container">
+            
+            
+
+
+
+
+<div class="fGeneral">
+    <script>
+
+     var f = document.getElementsByClassName("fGeneral")[0],
+         fctrl = true;
+
+     function isHidden(el) {
+         var style = window.getComputedStyle(el);
+         return ((style.display === 'none') || (style.visibility === 'hidden'))
+     }
+
+     window.addEventListener("scroll", function () {
+
+         var o = (f.getBoundingClientRect().top + window.scrollY),
+             t = window.pageYOffset !== undefined ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
+             n = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+         if (isHidden(f) || !fctrl) return;
+
+         else if ((t + 10) > (o - n)) {
+
+             fctrl = false;
+
+             var ajax = new XMLHttpRequest();
+
+             ajax.open("GET", "https://i.tmgrup.com.tr/footer/iframes/v2/generalEN.html?v735", true);
+
+             ajax.send();
+
+             ajax.onreadystatechange = function () {
+
+                 if (ajax.readyState == 4 && ajax.status == 200) {
+
+                     var data = ajax.responseText,
+                         el = document.getElementsByClassName("fGeneral")[0],
+                         elChild = document.createElement('div');
+
+                     data = data.replace(/{copyrightYear}/g, "2025");
+
+                     data = data.replace(/Copyright © 2021/g, "Copyright © 2025");
+                     elChild.innerHTML = data;
+                     el.appendChild(elChild);
+                 }
+             }
+
+         }
+
+     });
+
+    </script>
+</div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="opacity-bg"></div>
+
+    
+
+<div data-mbzone="PageOverlay" data-wbzone="PageOverlay"></div>
+<div data-mbzone="AdvCounter" data-wbzone="AdvCounter"></div>
+
+<script>var canRunAds=!1</script><script src=https://ad01.tmgrup.com.tr/bd/dfp/js/sabahads.js></script><script>function bdCheckBlk(){var i=deviceInfo.isMobile==!0?"mobile":"desktop",n,t;canRunAds==!0?(console.log("ads:"+canRunAds),bdGetCookie("blk_control")==null&&(n="BLK_"+i+"_NOTFOUND",ga("send","event",n,n,n),t=new Date,t.setDate(t.getDate()+5),bdSetCookie("blk_control","1",t.toGMTString(),"/"))):(console.log("ads:"+canRunAds),bdGetCookie("blk_control")==null&&(n="BLK_"+i+"_FOUND",ga("send","event",n,n,n),t=new Date,t.setDate(t.getDate()+5),bdSetCookie("blk_control","1",t.toGMTString(),"/")))}$(document).ready(function(){bdCheckBlk()})</script>
+
+    <script type="text/javascript">
+        var _kvkkLang = "en";
+        var _kvkkLink = "/terms-of-conditions";
+    </script>
+
+
+<script type="text/javascript" src="https://i.tmgrup.com.tr/tmd-consent/j/tmd-kvkk.js"></script>
+
+<!-- Push Notification -->
+<script src="https://i.tmgrup.com.tr/tmdwebpush/tmdwebpush.js?v=735" defer></script>
+<!-- Push Notification -->
+
+</body>
+</html>

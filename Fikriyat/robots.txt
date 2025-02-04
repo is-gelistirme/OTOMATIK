@@ -1,0 +1,12 @@
+﻿User-agent: *
+
+Sitemap: https://www.fikriyat.com/sitemap/index.xml
+Disallow: /Content
+Disallow: /anasayfa
+Disallow: /bize-ulasin 
+Disallow: /arama
+Disallow: /json
+Disallow: /html
+Disallow: /ajaxnc
+Disallow: /login/unauthorized
+Disallow: /iframe/*

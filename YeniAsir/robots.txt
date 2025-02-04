@@ -1,0 +1,27 @@
+User-agent: *
+
+Sitemap: https://www.yeniasir.com.tr/sitemap/news.xml
+Sitemap: https://www.yeniasir.com.tr/sitemap/index.xml
+
+Disallow: /arsiv
+Disallow: /haberadvertorial
+
+Disallow: /iframe/*
+Disallow: /video/iframe/*
+Disallow: /js
+Disallow: /json
+Disallow: /ajax
+Disallow: /get/tag/*
+Disallow: /haber/getsurmanset
+Disallow: /infinite/article/*
+
+Disallow: /yorum/*
+Disallow: /yorumoku/*
+
+Disallow: /turkiye-kupasi
+
+Disallow: /canli-skor
+
+Disallow: /secim/
+
+Disallow: *getcandidatetopinfo*

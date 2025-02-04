@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikriyat - Kur'an-ı Kerim</title>
+    <meta name="description" content="Kur’anı Kerim ve Meali okumak, dinlemek ve öğrenmek, hatim, istediğiniz sureye ve ayete kolayca ulaşmak için Fikriyat Kur’an-ı Kerim sayfasını ziyaret edin." />
+    
+ 
+<script>
+    var GlobalVariables = {
+        Section: "",
+        PageType: "Null",
+        HasMobile: false,
+        DetailTitle: "",
+        DetailPublishedDate: "",
+        DetailPublishedDateHour: "",
+        DetailModifiedDate: "",
+        DetailModifiedDateHour: ""
+    };
+</script>
+
+
+    
+    <script>
+        if (typeof GlobalVariables === 'undefined')
+        GlobalVariables = {};
+
+        if (typeof GlobalVariables.CustomDimensions === 'undefined')
+            GlobalVariables.CustomDimensions = {};
+        
+        var _ga4TitleFilter = "";
+        var _ga4DocumentTitle = "";
+
+               _ga4DocumentTitle = document.title; 
+
+        sendDataToGTM(JSON.stringify(GlobalVariables.CustomDimensions) === JSON.stringify({}) ? null : GlobalVariables.CustomDimensions);
+
+        function sendDataToGTM(customDimensions, url) {
+            window.dataLayer = window.dataLayer || [];
+            if (customDimensions)
+            {
+                try
+                {
+                    dataLayer.push({
+                        page: {
+                            'page_path': url || document.location.pathname + document.location.search,
+                            'page_title': _ga4DocumentTitle
+                        },
+                        content: {
+                            item_name: customDimensions['dimension' + 4],
+                            item_id: customDimensions['dimension' + 2],
+                            content_type: customDimensions['dimension' + 5],
+                            item_category: customDimensions['dimension' + 1],
+                            editor_id: customDimensions['dimension' + 6],
+                            author_id: customDimensions['dimension' + 8],
+                            source_type: customDimensions['dimension' + 7],
+                            publish_date: customDimensions['dimension' + 3]
+                        }
+                    })
+                }
+                catch (e) {
+                   console.error(e);
+                }
+            }
+            else {
+                try {
+                   dataLayer.push
+			       ({
+			          	page: {
+                               'page_title': _ga4DocumentTitle,
+			          		   'page_path': url || document.location.pathname + document.location.search
+                               }
+			       })
+                } catch (e) {
+                    console.error(e);
+                }
+               
+            }
+
+
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDR4MFHC');</script>
+    <!-- End Google Tag Manager -->
+
+
+    
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/jquery.min.js?v=18603.17"></script>
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/j/jquery.cookie.js?v=18603.17"></script>
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/jquery-ui.min.js?v=18603.17"></script>
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/touch-punch.min.js?v=18603.17"></script>
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/swipe.js?v=18603.17"></script>
+
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/jquery.mousewheel.min.js?v=18603.17"></script>
+    
+    
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/kuran.js?v=18603.17"></script>
+
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/index.js?v=18603.17"></script>
+    <script type="text/javascript" src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/j/social-share.js?v=18603.17"></script>
+        <script src="https://i.tmgrup.com.tr/tmd/mobile-detect/md2.min.js?v=735" type="text/javascript"></script><script src="https://i.tmgrup.com.tr/tmd/tmdbr.min.js?v=735" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/c/jquery-ui.css?v=18603.17" /> 
+    <link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/c/grid.min.css?v=18603.17" /> 
+    <link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/c/kuran.css?v=18603.17" /> 
+    <style type="text/css">
+        div.jp-volume-bar {
+            background-color: #ccc;
+            margin-top: 6px;
+            height: 4px;
+        }
+    </style>
+</head>
+<body class="sure">
+    <div class="opacity-bg"></div>
+    
+<header class="header">
+    <div class="container">
+        <h1 class="main-logo"><a href="https://www.fikriyat.com" target="_self"><img src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/i/fikriyat-logo.png" alt=""></a></h1>
+        <a href="javascript:;" class="mobile-menu"></a>
+        <h2 class="sub-logo"><a href="javascript:;"><img src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/i/kuran-logo.png" alt=""></a></h2>
+    </div>
+</header>
+
+    <div class="container koran">
+        
+    <div class="koran-left sticky">
+        <div class="left-menu">
+            <a href="javascript:;" class="left-menu-kuran active" type="quran">Kur'an</a>
+            <a href="javascript:;" class="left-menu-meal" type="trans">Meal</a>
+            <a href="javascript:;" class="left-menu-tefsir" type="tefs">Tefsir</a>
+        </div>
+        <div class="group">
+            <div class="list">
+    <div class="select">
+        <select name="juzMenu" id="juzMenu" onchange="showJuz();">
+        </select>
+    </div>
+</div>
+            <div class="list">
+    <div class="select">
+        <select name="suraMenu" id="suraMenu" onchange="showSura();">
+        </select>
+    </div>
+</div>
+            <div class="list">
+    <div class="select">
+        <select name="ayaMenu" id="ayaMenu" onchange="showAya();">
+        </select>
+    </div>
+</div>
+            <div class="list input-area">
+    <a href="javascript:;" class="input-area-left" onclick="changePage(1)" title="İleri"></a>
+    <span class="page-text">Sayfa</span> <input type="text" placeholder="1" id="pageNum">
+    <a href="javascript:;" class="input-area-right" onclick="changePage(-1)" title="Geri"></a>
+</div>
+        </div>
+        <div class="selectTitle">
+    <h3>Hafız Seçimi</h3>
+</div>
+<div class="group">
+    <div class="list">
+        <div class="select">
+            
+            <select class="reciteMenu">
+                <option value="afasy" title="Mishary bin Rashid Al-Afasy">Al-Afasy</option>
+                <option value="murattal" title="AbdulBasit AbdusSamad">AbdulBasit</option>
+                <option value="mujawad" title="AbdulBasit AbdusSamad">AbdulBasit (Mujawwad)</option>
+                <option value="hudhaify" title="Ali Al-Hudhaify">Al-Hudhaify</option>
+                <option value="husary" title="Khalil Al-Husary">Al-Husary</option>
+                <option value="husary-mjwd" title="Khalil Al-Husary">Al-Husary (Mujawwad)</option>
+                <option value="minshawi" title="Mohammed Siddiq Al-Minshawi">Al-Minshawi</option>
+                <option value="minshawi-mjwd" title="Mohammed Siddiq Al-Minshawi">Al-Minshawi (Mujawwad)</option>
+                <option value="osmanSahin" title="Hafız Osman Şahin">Hafız Osman Şahin</option>
+                <option value="ishakDemir" title="İshak Danış">İshak Danış</option>
+                <option value="SuudIbrahimSureym" title="Suud İbrahim eş-Şureym">Suud İbrahim eş-Şureym</option>
+                <option value="MahirMuaykili" title="Mahir el-Muaykili">Mahir el-Muaykili</option>
+                <option value="MuhammedSiddikMinsevi" title="Muhammed Sıddık Minşevi">Muhammed Sıddık Minşevi</option>
+                <option value="AbdulbasitAbdussamed" title="Abdulbasit Abdussamed">Abdulbasit Abdussamed</option>
+                <option value="AbdullahAlJuhani" title="Abdullah Al Juhani">Abdullah Al Juhani</option>
+            </select>
+        </div>
+        </div>
+    <!-- <div class="list label">
+        <label for="dubbing" class="dubbing">
+            Çift tıklanan ayeti seslendir <input type="checkbox" id="dubbing"><span class="checkbox-span"></span>
+        </label>
+    </div> -->
+</div>
+<div class="group player">
+    <div id="jplayer-box"></div>
+    <div class="menu-row" id="player-pad">
+        <div class="jp-interface">
+
+            <div class="player-play jp-play jp-play-pause">
+                <a href="javascript:;" class="play"></a>
+            </div>
+            <div class="player-play jp-pause jp-play-pause">
+                <a href="javascript:;" class="play active"></a>
+            </div>
+            <div class="player-volume">
+                <span class="volume-icon jp-volume-toggle"></span>
+                <span class="volume-icon jp-volume-mute-pad" style="display:none"></span>
+                <div class="jp-volume-bar slide-container">
+                    <div class="jp-volume-bar-value slider">
+                        <div class="jp-volume-bar-wrapper slider-value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jp-volume-max"></div>
+        </div>
+    </div>
+</div>
+        <div class="group">
+    
+
+    <div class="list font-size-mobile">
+        <div class="font-choice mobile">
+            <span>Yazı Boyutu</span>
+            <div class="slider-font-size"></div>
+        </div>
+    </div>
+
+</div>
+        <div class="group translate">
+    
+    <div class="list label">
+        <label>
+            Meal metni açık <input type="radio" name="radio-01" checked><span class="checkbox-span"></span>
+        </label>
+    </div>
+    <div class="list label">
+        <label>
+            Meal metni kapalı <input type="radio" name="radio-01" class="meal-hide"><span class="checkbox-span"></span>
+        </label>
+    </div>
+</div>
+        <div class="group resume">
+    <div class="list">
+        <i class="list-bookmark"></i>
+        Kaldığım yerden devam et
+    </div>
+</div>
+    </div>
+    <div class="koran-right">
+        <div class="listener">
+            <div class="listenItem">
+                <select name="" id="select1">
+                    <option value="" id="firstSelect">Seçkin hafızlardan cüz dinleyin</option>
+                </select>
+            </div>
+            <div class="listenItem">
+                <select name="" id="select2">
+                    <option value="" id="secondSelect">Farklı seslerden meal dinleyin</option>
+                </select>
+            </div>
+            <div class="listenItem">
+                <select name="" id="select3">
+                    <option value="" id="threeSelect">Aşr-ı Şerif okumaları dinleyin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="list mobile">
+            <div class="font-choice mobile">
+                <span>Yazı Boyutu</span>
+                <div class="slider-font-size"></div>
+            </div>
+            <div class="ribbon-mobile">
+                <div class="ribbon-mobile-bookmark">
+                    <div class="tooltip">
+                        Kaldığım yerden devam et
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" id="loadingImage">
+            <img src="https://i.tmgrup.com.tr/fikriyat/site/v1/quran/i/loading.gif" alt="">
+        </div>
+        <div class="koran-content">
+            <div class="koran-info">
+                <span id="juzName"></span>
+                <div>
+                    <a href="javascript:;" class="page-left" onclick="changePage(1)" title="İleri"></a>
+                    <span class="pageNumber"></span>
+                    <a href="javascript:;" class="page-right" onclick="changePage(-1)" title="Geri"></a>
+                </div>
+                <span class="display-flex" id="suraName"></span>
+            </div>
+            <div class="ribbon-kuran">
+                <div class="ribbon-icon" data-tooltip="Kaldığın Yeri İşaretle"></div>
+            </div>
+            
+            <div class="koran-text-content" data-elem="pinchzoomer">
+                <div class="koran-text-content-inner" id="quranText"></div>
+                <div class="tbox" style="display:none">
+                    <div class="tbox-head"><span></span></div>
+                    <div class="tbox-content" id="btext">
+                    </div>
+                    <a href="javascript:;" class="tbox-close">X</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="social-icons">
+                <a href="javascript:;" class="face" data-type="facebook" onclick="SocialMediaShare(this)"></a>
+                            <a href="javascript:;" class="twitter-x" data-type="twitter" onclick="SocialMediaShare(this)"></a>
+                            <a href="javascript:;" class="whatsapp mobile-show" data-type="whatsapp" onclick="SocialMediaShare(this)"></a>
+            <a href="javascript:;" class="mail" target="_top" id="mail"></a>
+            <a href="javascript:;" class="print" onclick="window.print();"></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('mail').href = "mailto:?subject=" + $(document).find("title").text() + "&body=" + window.location.href;
+    </script>
+
+    </div>
+    
+<footer class="footer">
+    <div class="container">
+        <div class="copytext">
+            <i class="fa fa-copyright"></i> 2019 <a href="https://www.fikriyat.com">Fikriyat</a>. Tüm hakları saklıdır.
+        </div>
+        <div class="footer-links">
+            <a href="https://www.fikriyat.com" title="Anasayfa">Anasayfa</a>
+            <a href="/gundem" title="Gündem">Gündem</a>
+            <a href="/listeler" title="Listeler">Listeler</a>
+            <a href="/fikriyat-ozel" title="Fikriyat Özel">Fikriyat Özel</a>
+            <a href="/kurani-kerim" title="Kur'an-ı Kerim">Kur'an-ı Kerim</a>
+            <a href="/akademik-haberler" title="Akademik">Akademik</a>
+            <a href="/fotograf" title="Fotoğraf">Fotoğraf</a>
+            <a href="/galeri" title="Galeri">Galeri</a>
+            <a href="/webtv" title="Fikriyat TV">Fikriyat TV</a>
+            <a href="/yazarlar" title="Yazarlar">Yazarlar</a>
+            <a href="/gizlilik-bildirimi" title="Gizlilik Bildirimi">Gizlilik Bildirimi</a>
+            <a href="/kunye" title="Künye">Künye</a>
+        </div>
+    </div>
+</footer>
+    
+                    <script type="text/javascript">
+                        <!--//--><![CDATA[//><!--
+                         if(typeof tmdCheckConsent === 'undefined' || tmdCheckConsent('statistics')){ 
+                        var gemiusIds = { Web: 'B2zg8qNA.376uWLf7c7tgcUX7zYZ9QNmJH.X.27oTr..c7', Mobile: '.Rbqliu32xcliIP5UfxWrpchzSrsmluBFeFFBUxoISb.47' };
+                        var pp_gemius_identifier = (deviceInfo.isMobile ? gemiusIds.Mobile : gemiusIds.Web);
+                        var gemius_disable_back_cache_hits = true;
+                        // lines below shouldn't be edited
+                        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+                        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+                        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+                        gt.src=l+'://tr.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script'); } 
+                        //--><!]]>
+                    </script>
+</body>
+</html>

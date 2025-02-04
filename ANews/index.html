@@ -1,0 +1,1259 @@
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><link rel="shortcut icon" href="i/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon-precomposed" href="https://i.tmgrup.com.tr/anews/site/v2i/apple-icon.png">
+    <link rel="icon" href="https://i.tmgrup.com.tr/anews/site/v2/i/favicon.png">
+
+    
+ <link rel="canonical" href="https://www.anews.com.tr" /> 
+ <meta property="fb:pages" content="676397785867004" /> 
+<title>A News - Daily News, Breaking News, and The Latest News Titles</title> 
+ <meta name="Description" content="You can get daily and breaking news headlines in the fastest way via A News website. Flash and breaking news related to World, Politics, Economy, Turkey, Sports, Health, Middle East, Islamophobia, Magazine categories are here!" /> 
+
+
+    <!-- CSS Files -->
+
+    
+
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/aNews2017.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/swiper-bundle.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/mobil-app-v2.css?v=19274" /> 
+
+<link rel="stylesheet" type="text/css" href="https://i.tmgrup.com.tr/anews/site/v2/c/jquery.fancybox.css?v=19274" /> 
+
+
+
+
+
+    <!-- Scripts -->
+
+    
+
+    <script>
+        function tmdCheckConsent(category) {
+            try {
+                if (getCookie('tmd_gdpr') == '0' || getCookie('tmd_gdpr') == '1') {
+                    if (typeof Cookiebot !== 'undefined') {
+                        if (Cookiebot) {
+                            if (Cookiebot.consent) {
+                                if (!Cookiebot.consent[category]) {
+                                    return false;
+                                }
+                            }
+                            else {
+                                var cookiebotConsentCookie = getCookie('CookieConsent');
+                                if (cookiebotConsentCookie && cookiebotConsentCookie.indexOf(category + ':false') > -1) {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (ex) { }
+            return true;
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+        }
+    </script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/tmd-consent/j/tmdconsent-v2.2.js?v=19274" ></script>
+
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/base.min.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/swiper-bundle.min.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/jquery.fancybox.pack.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v1/j/jquery.cookie.js?v=19274" ></script>
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v1/j/bootstrap.min.js?v=19274" ></script>
+
+    
+    <script>
+        if (typeof GlobalVariables === 'undefined')
+        GlobalVariables = {};
+            
+                GlobalVariables.CustomDimensions = {
+  "dimension1": "Homepage",
+  "dimension2": "96596afb-3586-470f-9973-ec5c276d5237",
+  "dimension3": "-",
+  "dimension4": "-",
+  "dimension5": "Kategori",
+  "dimension6": "-",
+  "dimension7": "-",
+  "dimension8": "-"
+};
+            
+
+        if (typeof GlobalVariables.CustomDimensions === 'undefined')
+            GlobalVariables.CustomDimensions = {};
+
+        var _ga4TitleFilter = "";
+        var _ga4DocumentTitle = "";
+
+               _ga4DocumentTitle = document.title; 
+
+        sendDataToGTM(JSON.stringify(GlobalVariables.CustomDimensions) === JSON.stringify({}) ? null : GlobalVariables.CustomDimensions);
+
+        function sendDataToGTM(customDimensions, url) {
+                  _ga4DocumentTitle = document.title; 
+
+            window.dataLayer = window.dataLayer || [];
+            if (customDimensions)
+            {
+                try
+                {
+                    dataLayer.push({
+                        page: {
+                            'page_path': url || document.location.pathname + document.location.search,
+                            'page_title': _ga4DocumentTitle
+                        },
+                        content: {
+                            item_name: customDimensions['dimension' + 4],
+                            item_id: customDimensions['dimension' + 2],
+                            content_type: customDimensions['dimension' + 5],
+                            item_category: customDimensions['dimension' + 1],
+                            editor_id: customDimensions['dimension' + 6],
+                            author_id: customDimensions['dimension' + 8],
+                            source_type: customDimensions['dimension' + 7],
+                            publish_date: customDimensions['dimension' + 3]
+                        }
+                    })
+                }
+                catch (e) {
+                   console.error(e);
+                }
+            }
+            else {
+                try {
+                   dataLayer.push
+			       ({
+			          	page: {
+                               'page_title': _ga4DocumentTitle,
+			          		   'page_path': url || document.location.pathname + document.location.search
+                               }
+			       })
+                } catch (e) {
+                    console.error(e);
+                }
+
+            }
+
+
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGHGM4L3');</script>
+    <!-- End Google Tag Manager -->
+
+
+        <script src="https://i.tmgrup.com.tr/tmd/mobile-detect/md2.min.js?v=735" type="text/javascript"></script><script src="https://i.tmgrup.com.tr/tmd/tmdbr.min.js?v=735" type="text/javascript"></script>
+    
+                    <script type="text/javascript">
+                        <!--//--><![CDATA[//><!--
+                         if(typeof tmdCheckConsent === 'undefined' || tmdCheckConsent('statistics')){ 
+                        var gemiusIds = { Web: '0mub8ONAAAb8WzWBoS9KILQX78bKKhsQZGrDJzTIRMn.p7', Mobile: 'bJGV9FyApdlg7lZNwwkzZbRJ76bKoRsAxKbDOQT_nMb.U7' };
+                        var pp_gemius_identifier = (deviceInfo.isMobile ? gemiusIds.Mobile : gemiusIds.Web);
+                        var gemius_disable_back_cache_hits = true;
+                        // lines below shouldn't be edited
+                        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+                        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+                        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+                        gt.src=l+'://tr.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script'); } 
+                        //--><!]]>
+                    </script>
+
+    <script async=async src=https://securepubads.g.doubleclick.net/tag/js/gpt.js></script><script async=async src=https://static.criteo.net/js/ld/publishertag.js></script><script>function bdGetCookie(n){for(var i,r=n+"=",u=r.length,f=document.cookie.length,t=0;f>t;){if(i=t+u,document.cookie.substring(t,i)==r)return bdGetCookieVal(i);if(0==(t=document.cookie.indexOf(" ",t)+1))break}return null}function bdGetCookieVal(n){var t=document.cookie.indexOf(";",n);return-1==t&&(t=document.cookie.length),unescape(document.cookie.substring(n,t))}function bdDeleteCookie(n,t,i){bdGetCookie(n)&&(document.cookie=n+"="+(t?"; path="+t:"")+(i?"; domain="+i:"")+"; expires=Thu, 01-Jan-70 00:00:01 GMT")}function bdSetCookie(n,t,i,r,u,f){document.cookie=n+"="+escape(t)+(i?"; expires="+i:"")+(r?"; path="+r:"")+(u?"; domain="+u:"")+(f?"; secure":"")}function bdGetDocumentHeight(){return $(window).height()}function bdHide970x250(){googletag.pubads().clear([bdSlots.slot_d_970x250]);$("#id_d_970x250").prepend('<div class="slot_control" style="float:right; cursor:pointer; font-size:small; font-family:sans-serif; background-color:rgba(0, 0, 0, 0.1); padding:1px 5px 1px 5px; color:rgba(94, 102, 81, 0.85); " onClick="bdShow970x250();">Reklamı Göster<\/div>');$("#id_d_970x250").show();$("#id_d_970x250").css("margin-bottom","25px")}function bdShow970x250(){$(".slot_control").length>0&&$(".slot_control").remove();googletag.cmd.push(function(){bdSlots.slot_d_970x250.clearTargeting();googletag.pubads().refresh([bdSlots.slot_d_970x250])});$("#id_d_970x250").css("margin-bottom","15px")}</script><script>var googletag=googletag||{},bdSlots;googletag.cmd=googletag.cmd||[];bdSlots=bdSlots||{};googletag.cmd.push(function(){deviceInfo.isMobile?(bdSlots.slot_m_300x250=googletag.defineSlot("/31110078/anews/mobile_web/anasayfa/300x250",[300,250],"id_m_300x250").addService(googletag.pubads()),bdSlots.slot_m_custombox=googletag.defineSlot("/31110078/anews/mobile_web/anasayfa/custombox",[[320,142],[320,100],[320,50]],"id_m_custombox").addService(googletag.pubads()),bdSlots.slot_m_po=googletag.defineOutOfPageSlot("/31110078/anews/mobile_web/sitegeneli/pageoverlay","id_m_po").addService(googletag.pubads()),bdSlots.slot_m_po_3=googletag.defineOutOfPageSlot("/31110078/anews/mobile_web/anasayfa/pageoverlay_3","id_m_po_3").addService(googletag.pubads())):(deviceInfo.isMobile||deviceInfo.isTablet||(bdSlots.slot_d_pageskin_master=googletag.defineSlot("/31110078/anews/desktop_web/anasayfa/pageskin_master",[[500,1e3],[160,600],[120,600]],"id_d_ps_left").addService(googletag.pubads()),bdSlots.slot_d_pageskin_companion_right=googletag.defineSlot("/31110078/anews/desktop_web/anasayfa/pageskin_companion_right",[[160,600],[120,600],[500,1001]],"id_d_ps_right").addService(googletag.pubads())),bdSlots.slot_d_970x250=googletag.defineSlot("/31110078/anews/desktop_web/anasayfa/970x250",[[970,250],[970,90],[970,91],[970,350]],"id_d_970x250").addService(googletag.pubads()),bdSlots.slot_d_300x250=googletag.defineSlot("/31110078/anews/desktop_web/anasayfa/300x250",[300,250],"id_d_300x250").addService(googletag.pubads()),bdSlots.slot_d_300x600=googletag.defineSlot("/31110078/anews/desktop_web/anasayfa/300x600",[300,600],"id_d_300x600").addService(googletag.pubads()),bdSlots.slot_d_po=googletag.defineOutOfPageSlot("/31110078/anews/desktop_web/sitegeneli/pageoverlay","id_d_po").addService(googletag.pubads()),bdSlots.slot_d_po_3=googletag.defineOutOfPageSlot("/31110078/anews/desktop_web/anasayfa/pageoverlay_3","id_d_po_3").addService(googletag.pubads()));googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs(!0);googletag.pubads().addEventListener("slotRenderEnded",function(n){var r=$("#"+n.slot.getSlotElementId()),i,t;n.slot==bdSlots.slot_d_pageskin_companion_right&&n.campaignId==389705318&&window.addEventListener("scroll",function(){$("#id_d_ps_right").css("top",-document.documentElement.scrollTop)});n.slot==bdSlots.slot_d_pageskin_companion_top&&n.isEmpty&&($("._pageSkinTop").remove(),console.log("_pageskinTop removed!"));n.slot==bdSlots.slot_d_970x250?(console.log("elementId:"+n.slot.getSlotElementId()+" campaignId: "+n.campaignId),n.isEmpty||n.size[1]==350||n.size[1]==91||n.size[1]==90||(i='<div class="slot_control" style="float:right; cursor:pointer; font-size:small; font-family:sans-serif; background-color:rgba(0, 0, 0, 0.1); padding:1px 5px 1px 5px; color:rgba(94, 102, 81, 0.85); " onClick="bdHide970x250();">Reklamı Kapat<\/div>',r.prepend(i))):n.slot==bdSlots.slot_d_728x90&&(n.isEmpty||(t=$(".advertControlArea").height()+90,$(".pageSkinRight").css({top:t}),$(".pageSkinLeft").css({top:t})))});googletag.enableServices()})</script>
+    
+</head>
+<body class="">
+
+    
+
+<script defer type="text/javascript" src="https://i.tmgrup.com.tr/contactus/j/contactus.js?v=735"></script>
+    <script type="text/javascript">
+                var tmdContactUs_PID = 19;
+                var tmdContactUs_PageType = 'Anasayfa';
+    </script>
+<a href="/Contact?pageType=Anasayfa" class="stickyLink" contactus-popup="" id="contactLink">Contact Us</a>
+
+
+
+
+
+
+    <!-- topAdvert -->
+    <div class="topAdvert">
+        <div class="in">
+            <div data-mbzone="728x90" data-wbzone="728x90"></div>
+        </div>
+    </div>
+
+    
+
+
+<header class="sticker">
+    <div class="container">
+        <a href="/" class="logo"> <img src="https://i.tmgrup.com.tr/anews/site/v2/i/a-news-logo.png" alt="" /> </a>
+        <a href="/webtv/live-broadcast" class="live onlyMobile"></a>
+        <span class="mobileMenuIcon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <div class="topFrame">
+
+            <nav class="menuWrapper">
+                
+                <ul id="menu" class="items">
+                    <li>
+                        <a href="/world"> WORLD</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/islamic-world">Islamic World </a>
+                            </li>
+                            <li>
+                                <a href="/africa">Africa</a>
+                            </li>
+                            <li>
+                                <a href="/americas">Americas</a>
+                            </li>
+                            <li>
+                                <a href="/asia">Asia</a>
+                            </li>
+                            <li>
+                                <a href="/australia">Australia</a>
+                            </li>
+                            <li>
+                                <a href="/europe">Europe</a>
+                            </li>
+                            <li>
+                                <a href="/middle-east">Middle East</a>
+                            </li>
+                            <li>
+                                <a href="/turkey">Türkiye</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/politics"> POLITICS</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/turkish-politics">Turkish Politics</a>
+                            </li>
+                            <li>
+                                <a href="/us-politics">U.S. Politics</a>
+                            </li>
+                            <li>
+                                <a href="/european-union">European Union</a>
+                            </li>
+                            <li>
+                                <a href="/anti-terror-fight">Anti-terror fight</a>
+                            </li>
+                            <li>
+                                <a href="/islamophobia">Islamophobia</a>
+                            </li>
+                            <li>
+                                <a href="/diplomacy">Diplomacy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/economy"> ECONOMY</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/tech">Tech</a>
+                            </li>
+                            <li>
+                                <a href="/business">Business</a>
+                            </li>
+                            <li>
+                                <a href="/food">Food</a>
+                            </li>
+                            <li>
+                                <a href="/travel">Travel</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sport"> SPORTS</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/football">Football</a>
+                            </li>
+                            <li>
+                                <a href="/basketball">Basketball</a>
+                            </li>
+                            <li>
+                                <a href="/tennis">Tennis</a>
+                            </li>
+                            <li>
+                                <a href="/motorsport">Motorsport</a>
+                            </li>
+                            <li>
+                                <a href="/others">Others</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/magazine"> MAGAZINE</a>
+                        <span class="down-icon">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/celebrities">Celebrities</a>
+                            </li>
+                            <li>
+                                <a href="/screen">Screen</a>
+                            </li>
+                            <li>
+                                <a href="/entertainment">Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="/cinema">Cinema</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/art"> ART</a>
+                    </li>
+                    <li>
+                        <a href="/health"> HEALTH</a>
+                    </li>
+                    <li>
+                        <a href="/webtv"> VIDEOS</a>
+                    </li>
+                    <li>
+                        <a href="/gallery"> PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="/webtv/live-broadcast"> LIVE TV</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="headerTools">
+                <ul class="topSocial">
+                    <li>
+                        <span><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/anews" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/anews" target="_blank"><i class="fa fa-x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/aNews/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://flipboard.com/@ANEWS2019" target="_blank"><img src="https://i.tmgrup.com.tr/anews/site/v2/i/flipboard-icon.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/ANewsGlobal" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="/rss-bilgi" target="_blank"><i class="fa fa-rss"></i></a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+                <!-- topSocial End -->
+                <div class="topSearch">
+                    <div class="searchbox">
+                        <input type="search" placeholder="Search.." name="search" class="searchbox-input" id="txtSearch" onkeydown="if(event.keyCode==13) Search();">
+                        <input type="submit" class="searchbox-submit" value="">
+                        <span class="searchbox-icon fa fa-search"></span>
+                    </div>
+                </div>
+                <!-- topSearch End -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ************* HEADER END ************** -->
+
+<script>
+    $(document).ready(function () {
+
+        $('.menuWrapper ul li').each(function (index, element) {
+
+            var elem = $(this).find('a').first();
+            var catUrl = "";
+            if (elem.attr('href') == catUrl) {
+                $(this).addClass('active');
+                return false;
+            }
+        });
+    });
+</script>
+
+
+    
+<script  type="text/javascript" src="https://i.tmgrup.com.tr/anews/site/v2/j/home.js?v=19274" ></script>
+
+
+
+
+
+
+
+
+
+<div class="electionContent">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                                                                            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="interactiveBandFrame">
+    <div class="container">
+        <div class="interactiveBand">
+            <div class="cell city">
+                <div class="selector">
+                    <select id="SelectedCityOption">
+                            <option data-plate="2" value="2">
+                                ISTANBUL
+                            </option>
+                            <option data-plate="49" value="49">
+                                ANKARA
+                            </option>
+                            <option data-plate="90" value="90">
+                                AMSTERDAM
+                            </option>
+                            <option data-plate="109" value="109">
+                                ATHEN
+                            </option>
+                            <option data-plate="105" value="105">
+                                BELGRAD
+                            </option>
+                            <option data-plate="95" value="95">
+                                BERLIN
+                            </option>
+                            <option data-plate="93" value="93">
+                                BONN
+                            </option>
+                            <option data-plate="91" value="91">
+                                BRUSSELS
+                            </option>
+                            <option data-plate="99" value="99">
+                                BUDAPEST
+                            </option>
+                            <option data-plate="132" value="132">
+                                BUCHAREST
+                            </option>
+                            <option data-plate="94" value="94">
+                                FRANKFURT
+                            </option>
+                            <option data-plate="134" value="134">
+                                KOMOTINI
+                            </option>
+                            <option data-plate="86" value="86">
+                                HELSINKI
+                            </option>
+                            <option data-plate="137" value="137">
+                                KIEV
+                            </option>
+                            <option data-plate="130" value="130">
+                                KARDZHALI
+                            </option>
+                            <option data-plate="97" value="97">
+                                COLOGNE
+                            </option>
+                            <option data-plate="89" value="89">
+                                COPENHAGEN
+                            </option>
+                            <option data-plate="133" value="133">
+                                CONSTANTENCE
+                            </option>
+                            <option data-plate="88" value="88">
+                                LONDON
+                            </option>
+                            <option data-plate="103" value="103">
+                                MADRID
+                            </option>
+                            <option data-plate="138" value="138">
+                                MINSK
+                            </option>
+                            <option data-plate="107" value="107">
+                                MOSCOW
+                            </option>
+                            <option data-plate="96" value="96">
+                                MUNICH
+                            </option>
+                            <option data-plate="85" value="85">
+                                OSLO
+                            </option>
+                            <option data-plate="92" value="92">
+                                PARIS
+                            </option>
+                            <option data-plate="98" value="98">
+                                PRAG
+                            </option>
+                            <option data-plate="108" value="108">
+                                ROME
+                            </option>
+                            <option data-plate="135" value="135">
+                                SARAJEVO
+                            </option>
+                            <option data-plate="127" value="127">
+                                THESSALONIKI
+                            </option>
+                            <option data-plate="106" value="106">
+                                SOFIA
+                            </option>
+                            <option data-plate="87" value="87">
+                                STOCKHOLM
+                            </option>
+                            <option data-plate="129" value="129">
+                                SHUMEN
+                            </option>
+                            <option data-plate="131" value="131">
+                                TIRAN
+                            </option>
+                            <option data-plate="128" value="128">
+                                SKOPJE
+                            </option>
+                            <option data-plate="100" value="100">
+                                WARSAW
+                            </option>
+                            <option data-plate="102" value="102">
+                                VIENNA
+                            </option>
+                            <option data-plate="136" value="136">
+                                ZENITSA
+                            </option>
+                            <option data-plate="101" value="101">
+                                ZURICH
+                            </option>
+                            <option data-plate="120" value="120">
+                                ASHGABAT
+                            </option>
+                            <option data-plate="125" value="125">
+                                BAKU
+                            </option>
+                            <option data-plate="121" value="121">
+                                BISHKEK
+                            </option>
+                            <option data-plate="123" value="123">
+                                DUSHANBE
+                            </option>
+                            <option data-plate="118" value="118">
+                                KYRENIA
+                            </option>
+                            <option data-plate="144" value="144">
+                                KABUL
+                            </option>
+                            <option data-plate="119" value="119">
+                                NICOSIA
+                            </option>
+                            <option data-plate="143" value="143">
+                                TAHRAN
+                            </option>
+                            <option data-plate="126" value="126">
+                                TBILISI
+                            </option>
+                            <option data-plate="146" value="146">
+                                TOKYO
+                            </option>
+                    </select>
+                </div>
+            </div>
+            <div class="cell weather">
+                <div class="meteor">
+                    <span class="iconDiv">
+                        <span class="flaticon-GSY"></span>
+                    </span>
+                    <span class="celcius"></span>
+                </div>
+            </div>
+            <div data-market-usd class="cell" id="dol">
+                <strong>USD/TRY </strong>
+                <span class="normal">3,5244</span>
+            </div>
+            <div data-market-eur class="cell" id="eur">
+                <strong>   EUR/TRY  </strong>
+                <span class="normal">3,5244</span>
+            </div>
+            <div data-market-eurusd class="cell" id="eurusd">
+                <strong>   EUR/USD </strong>
+                <span class="normal">3,5244</span>
+            </div>
+            <div data-market-gldusd class="cell" id="gldusd">
+                <strong>   Gold Spot    </strong>
+                <span class="down">3,5244</span>
+            </div>
+            <div data-market-brent class="cell" id="brent">
+                <strong>    Brent Oil     </strong>
+                <span class="up">3,5244</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- interactiveBand End -->
+
+
+
+
+<div class="mansetArea">
+    <div class="container">
+            <div class="mansetWrapper">
+                <div class="sideSingleItems">
+                    <figure class="item manset-border-bottom">
+                        <a href="/sport/2025/02/04/turkish-fm-voices-strong-opposition-to-any-efforts-to-expel-palestinians-from-their-homeland" class="_294x250">
+                            <picture class="img-holder">
+                                <img src="https://ia.tmgrup.com.tr/7ea402/294/250/0/0/659/561?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/turkish-fm-voices-strong-opposition-to-any-efforts-to-expel-palestinians-from-their-homeland-1738673779543.jpg" alt="Turkish FM raises concerns over Netanyahu’s potential actions" />
+                            </picture>
+                        </a>
+                            <figcaption><a href="/sport/2025/02/04/turkish-fm-voices-strong-opposition-to-any-efforts-to-expel-palestinians-from-their-homeland">Turkish FM raises concerns over Netanyahu’s potential actions</a></figcaption>
+                    </figure>
+                    <figure class="item manset-border-bottom">
+                        <a href="/world/2025/02/04/germanys-scholz-criticizes-trumps-ukraine-minerals-for-aid-plan" class="_294x250">
+                            <picture class="img-holder">
+                                <img src="https://ia.tmgrup.com.tr/5cfc3a/294/250/143/0/715/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/germanys-scholz-criticizes-trumps-ukraine-minerals-for-aid-plan-1738660918350.jpg" alt="Scholz criticizes Trump&#39;s Ukraine minerals-for-aid plan" />
+                            </picture>
+                        </a>
+                            <figcaption><a href="/world/2025/02/04/germanys-scholz-criticizes-trumps-ukraine-minerals-for-aid-plan">Scholz criticizes Trump&#39;s Ukraine minerals-for-aid plan</a></figcaption>
+                    </figure>
+                </div>
+                    <div class="manset-big-image">
+                        <figure class="item">
+                            <a href="/world/2025/02/04/netanyahus-us-visit-what-is-war-criminal-netanyahu-seeking-and-how-far-will-donald-trump-go-for-israel" class="_552x500">
+                                <picture class="img-holder">
+                                    <img src="https://ia.tmgrup.com.tr/aaec7b/552/500/84/0/673/533?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/netanyahus-us-visit-what-is-war-criminal-netanyahu-seeking-and-how-far-will-donald-trump-go-for-israel-1738667941485.jpeg" alt="What is war-criminal Netanyahu seeking and how far will Donald Trump go for Israel?" />
+                                </picture>
+                            </a>
+                                <figcaption><a href="/world/2025/02/04/netanyahus-us-visit-what-is-war-criminal-netanyahu-seeking-and-how-far-will-donald-trump-go-for-israel">What is war-criminal Netanyahu seeking and how far will Donald Trump go for Israel?</a></figcaption>
+                        </figure>
+                    </div>
+                <!-- mansetSliderFrame End -->
+                <div class="sideSingleItems">
+                    <figure class="item manset-border-bottom">
+                        <a href="/middle-east/2025/02/04/hamas-accuses-israel-of-delaying-access-to-humanitarian-aid-into-gaza-under-ceasefire-deal" class="_294x250">
+                            <picture class="img-holder">
+                                <img src="https://ia.tmgrup.com.tr/90b085/294/250/100/0/728/533?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/hamas-accuses-israel-of-delaying-access-to-humanitarian-aid-into-gaza-under-ceasefire-deal-1738670395368.jpg" alt="Israel accused of delaying aid access into Gaza Strip" />
+                            </picture>
+                        </a>
+                            <figcaption><a href="/middle-east/2025/02/04/hamas-accuses-israel-of-delaying-access-to-humanitarian-aid-into-gaza-under-ceasefire-deal">Israel accused of delaying aid access into Gaza Strip</a></figcaption>
+                    </figure>
+                    <figure class="item manset-border-bottom">
+                        <a href="/world/2025/02/04/trump-says-there-is-great-interest-in-tiktok" class="_294x250">
+                            <picture class="img-holder">
+                                <img src="https://ia.tmgrup.com.tr/6c26e9/294/250/74/0/496/359?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/trump-says-there-is-great-interest-in-tiktok-1738647790927.jpeg" alt="Trump says there is &#39;great interest&#39; in TikTok" />
+                            </picture>
+                        </a>
+                            <figcaption><a href="/world/2025/02/04/trump-says-there-is-great-interest-in-tiktok">Trump says there is &#39;great interest&#39; in TikTok</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- mansetWrapper End -->
+            <!--latestNewsBand End -->
+
+
+
+    </div>
+</div>
+<!-- mansetArea End -->
+
+
+
+
+<div class="newsContent">
+    <div class="container">
+        <div class="row">
+
+<div class="col-lg-4 col-xs-12 pull-right" data-showifexist><div class="item"><div class="adControl"><div data-mbzone="300x250" data-wbzone="300x250"></div></div></div></div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/americas/2025/02/04/canadas-trudeau-says-us-tariffs-have-been-put-on-hold-for-30-days"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/c89dd6/385/228/0/0/800/473?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/canadas-trudeau-says-us-tariffs-have-been-put-on-hold-for-30-days-1738620306471.jpg" alt="" /></a>
+                        <figcaption><a href="/americas/2025/02/04/canadas-trudeau-says-us-tariffs-have-been-put-on-hold-for-30-days">Trudeau says US tariffs have been put on hold for 30 days</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/middle-east/2025/02/04/palestinian-government-forms-committee-to-run-post-war-gaza"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/36980a/385/228/0/19/800/492?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/palestinian-government-forms-committee-to-run-post-war-gaza-1738672231935.jpg" alt="" /></a>
+                        <figcaption><a href="/middle-east/2025/02/04/palestinian-government-forms-committee-to-run-post-war-gaza">Palestinian government forms committee to run post-war Gaza</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="https://www.anews.com.tr/gallery/world/firefighter-and-rescued-cat-enkaz-forge-unbreakable-bond"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/cc7170/385/228/0/0/1216/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/firefighter-and-rescued-cat-enkaz-forge-unbreakable-bond-1738669225442.jpg" alt="" /></a>
+                        <figcaption><a href="https://www.anews.com.tr/gallery/world/firefighter-and-rescued-cat-enkaz-forge-unbreakable-bond">Firefighter and rescued cat &#39;Enkaz&#39; forge unbreakable bond</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/kremlin-calls-trumps-ukraine-minerals-for-aid-plan-a-commercial-proposal"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/0eab0d/385/228/0/49/800/523?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/kremlin-calls-trumps-ukraine-minerals-for-aid-plan-a-commercial-proposal-1738669051401.jpg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/kremlin-calls-trumps-ukraine-minerals-for-aid-plan-a-commercial-proposal">Kremlin calls Trump’s Ukraine minerals-for-aid plan a ‘commercial ’</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/europe/2025/02/04/ex-nato-chief-jens-stoltenberg-to-become-norways-finance-minister"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/ae2f93/385/228/0/0/800/473?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/ex-nato-chief-jens-stoltenberg-to-become-norways-finance-minister-1738670032847.jpg" alt="" /></a>
+                        <figcaption><a href="/europe/2025/02/04/ex-nato-chief-jens-stoltenberg-to-become-norways-finance-minister">Ex-NATO chief Jens Stoltenberg to become Norway&#39;s finance minister</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/at-least-four-killed-in-russian-strike-on-ukraines-izyum"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/19e58f/385/228/0/6/800/479?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/at-least-four-killed-in-russian-strike-on-ukraines-izyum-1738669643048.jpg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/at-least-four-killed-in-russian-strike-on-ukraines-izyum">At least four killed in Russian strike on Ukraine&#39;s Izyum</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/turkey/2025/02/04/turkiye-to-host-15-palestinians-forced-to-live-abroad-after-release-from-israeli-prison"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/3bc42d/385/228/43/0/864/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/turkiye-to-host-15-palestinians-forced-to-live-abroad-after-release-from-israeli-prison-1738660813425.jpg" alt="" /></a>
+                        <figcaption><a href="/turkey/2025/02/04/turkiye-to-host-15-palestinians-forced-to-live-abroad-after-release-from-israeli-prison">T&#252;rkiye to host 15 Palestinians released from Israeli prison</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="https://www.anews.com.tr/gallery/world/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/5940cc/385/228/0/0/1216/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid-1738667622209.jpg" alt="" /></a>
+                        <figcaption><a href="https://www.anews.com.tr/gallery/world/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid">15th Goodness Ship sets sail for Gaza with humanitarian aid</a></figcaption>
+                    </figure>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- newsContent end -->
+
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper('.latestNewsBand .swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            speed: 500
+        });
+    })
+</script>
+
+
+
+<div class="video-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 p0">
+                <div class="category-title">VIDEO</div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-7 p0">
+                    <figure class="item">
+                        <a href="/webtv/world/russia-claims-to-have-attacked-a-ukrainian-military-airport" class="video-image"><img src="https://ia.tmgrup.com.tr/08567c/684/382/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/russia-claims-to-have-attacked-a-ukrainian-military-airport-1738588597822.jpeg" class="lazy" data-original="https://ia.tmgrup.com.tr/08567c/684/382/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/russia-claims-to-have-attacked-a-ukrainian-military-airport-1738588597822.jpeg" alt="" style=""></a>
+                        <a href="/webtv/world" class="category-link">WORLD</a>
+                        <figcaption>
+                            <a href="/webtv/world/russia-claims-to-have-attacked-a-ukrainian-military-airport">
+                                <span>Russia claims to have attacked a Ukrainian military airport</span>
+                                <span>The Russia-Ukraine conflict intensified on Sunday, with Moscow targeting Ukrainian military sites and Kyiv reporting heavy battles along key frontlines. </span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-5 p0">
+                    <div class="video-list">
+                        <div class="video-list-content">
+                                <a href="/webtv/world/gunman-kills-13-people-in-a-bloodied-start-to-the-new-year" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/f79e93/156/87/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738588323129.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Gunman kills 13 people in a bloodied start to the New Year </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/turkey/fidan-vows-turkiye-will-not-tolerate-terrorism-in-syria" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/990620/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738587751002.jpeg" alt="">
+                                    <span>
+                                        <strong>TURKEY</strong>
+                                        <i>Fidan vows T&#252;rkiye will not tolerate terrorism in Syria </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/south-africans-and-nigerians-respond-to-us-aid-cuts-by-trump" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/15f9b1/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738587472528.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>South Africans and Nigerians respond to US aid cuts by Trump </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/protesters-in-panama-denounce-rubio-and-trumps-policies" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/18020c/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/protesters-in-panama-denounce-rubio-and-trumps-policies-1738587374931.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Protesters in Panama denounce Rubio and Trump&#39;s policies </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/middle-east/explosions-hit-west-bank-as-israel-detonates-multiple-buildings" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/193f36/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738587151623.jpeg" alt="">
+                                    <span>
+                                        <strong>MİDDLE-EAST</strong>
+                                        <i>Explosions hit West Bank as Israel detonates multiple buildings </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/tens-of-thousands-protest-to-reject-cdus-far-right-deal" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/3421ff/156/87/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/tens-of-thousands-protest-to-reject-cdus-far-right-deal-1738587009895.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Tens of thousands protest to reject CDU&#39;s far-right deal </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/trudeau-warns-us-tariffs-will-hurt-american-jobs-and-prices" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/6e4e7c/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/trudeau-warns-us-tariffs-will-hurt-american-jobs-and-prices-1738586928218.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Trudeau warns US tariffs will hurt American jobs and prices </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/fragile-ceasefire-arrest-warrants-mark-netanyahus-us-visit" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/dc9d97/156/87/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738586617179.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Fragile ceasefire, arrest warrants mark Netanyahu&#39;s US visit </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/how-world-health-organization-is-reacting-to-us-withdrawal" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/b58da6/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/02/03/1738586300984.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>How World Health Organization is reacting to U.S. withdrawal </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/meloni-under-investigation-over-release-of-libyan-suspect" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/fbff0a/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/01/30/1738245355950.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Meloni under investigation over release of Libyan suspect </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/trump-revokes-spending-freeze-in-face-of-legal-challenges" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/ff73fa/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/01/30/1738245242637.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Trump revokes spending freeze in face of legal challenges </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/american-airlines-jet-and-army-helicopter-collide-1738246289" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/6eaaa5/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/01/30/1738245099933.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>American Airlines jet and army helicopter collide </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/american-airlines-jet-and-army-helicopter-collide" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/27568a/156/87/0/0/1280/714?u=https://i.tmgrup.com.tr/anews/v1/2025/01/30/american-airlines-jet-and-army-helicopter-collide-1738244960583.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>American Airlines jet and army helicopter collide </i>
+                                    </span>
+                                </a>
+                                <a href="/webtv/world/trump-orders-guantanamo-expansion-for-migrant-detention" class="video-list-item">
+                                    <img src="https://ia.tmgrup.com.tr/13e590/156/87/0/5/1280/720?u=https://i.tmgrup.com.tr/anews/v1/2025/01/30/1738241630799.jpeg" alt="">
+                                    <span>
+                                        <strong>WORLD</strong>
+                                        <i>Trump orders Guantanamo expansion for migrant detention </i>
+                                    </span>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="newsContent">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-xs-12">
+                <div class="adControl large" data-showifexist><div data-mbzone="300x600" data-wbzone="300x600"></div></div>
+            </div>
+
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/wreckage-from-us-plane-crash-lifted-out-of-potomac-river"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/e62829/385/228/0/84/1500/972?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/wreckage-from-us-plane-crash-lifted-out-of-potomac-river-1738647455970.jpg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/wreckage-from-us-plane-crash-lifted-out-of-potomac-river">Wreckage from US plane crash lifted out of Potomac River</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/europe/2025/02/04/ex-nato-chief-stoltenberg-named-norway-finance-minister"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/d19de6/385/228/0/0/800/474?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/ex-nato-chief-stoltenberg-named-norway-finance-minister-1738665688055.jpeg" alt="" /></a>
+                        <figcaption><a href="/europe/2025/02/04/ex-nato-chief-stoltenberg-named-norway-finance-minister">Ex-NATO chief Stoltenberg named Norway finance minister</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/middle-east/2025/02/04/7-israeli-soldiers-injured-in-armed-attack-in-northern-occupied-west-bank"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/c2d87e/385/228/0/0/820/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/7-israeli-soldiers-injured-in-armed-attack-in-northern-occupied-west-bank-1738653701048.jpg" alt="" /></a>
+                        <figcaption><a href="/middle-east/2025/02/04/7-israeli-soldiers-injured-in-armed-attack-in-northern-occupied-west-bank">7 Israeli soldiers injured in armed attack in northern occupied West Bank</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/usaid-faces-uncertain-future-amid-merger-talks-funding-freezes"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/a68ef3/385/228/0/84/1500/972?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/usaid-faces-uncertain-future-amid-merger-talks-funding-freezes-1738660381183.jpg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/usaid-faces-uncertain-future-amid-merger-talks-funding-freezes">USAID faces uncertain future amid merger talks, funding freezes</a></figcaption>
+                    </figure>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="newsContent">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/magazine/2025/02/04/man-about-the-house-star-brian-murphy-dies-at-age-of-92"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/5cb4de/385/228/38/0/768/432?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/man-about-the-house-star-brian-murphy-dies-aged-92-1738664925214.jpeg" alt="" /></a>
+                        <figcaption><a href="/magazine/2025/02/04/man-about-the-house-star-brian-murphy-dies-at-age-of-92">&#39;Man About The House&#39; star Brian Murphy dies at age of 92</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/sport/2025/02/04/victor-nelsson-joins-roma-from-galatasaray-with-option-to-buy"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/34a181/385/228/0/0/800/473?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/victor-nelsson-joins-roma-from-galatasaray-with-option-to-buy-1738665064801.jpeg" alt="" /></a>
+                        <figcaption><a href="/sport/2025/02/04/victor-nelsson-joins-roma-from-galatasaray-with-option-to-buy">Victor Nelsson joins Roma from Galatasaray with option to buy</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/diplomacy/2025/02/04/turkish-qatari-defense-chiefs-discuss-bilateral-regional-defense"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/ce240c/385/228/0/18/1020/623?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/turkish-qatari-defense-chiefs-discuss-bilateral-regional-defense-1738668062343.jpeg" alt="" /></a>
+                        <figcaption><a href="/diplomacy/2025/02/04/turkish-qatari-defense-chiefs-discuss-bilateral-regional-defense">Turkish, Qatari defense chiefs discuss bilateral, regional defense</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/japanese-premier-due-in-us-to-hold-talks-with-trump"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/2c456a/385/228/39/0/860/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/japanese-premier-due-in-us-to-hold-talks-with-trump-1738660531500.jpg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/japanese-premier-due-in-us-to-hold-talks-with-trump">Japanese premier due in US to hold talks with Trump</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/economy/2025/02/04/trumps-digital-dollar-ban-puts-us-behind-in-global-currency-race"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/4be1e7/385/228/0/0/820/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/trumps-digital-dollar-ban-puts-us-behind-in-global-currency-race-1738668147307.jpg" alt="" /></a>
+                        <figcaption><a href="/economy/2025/02/04/trumps-digital-dollar-ban-puts-us-behind-in-global-currency-race">Trump’s digital dollar ban puts US behind in global currency race</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/health/2025/02/04/us-aid-cut-sparks-warning-of-alarming-increase-in-hepatitis-transmission"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/4e4677/385/228/43/0/864/486?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/us-aid-cut-sparks-warning-of-alarming-increase-in-hepatitis-transmission-1738657104294.jpg" alt="" /></a>
+                        <figcaption><a href="/health/2025/02/04/us-aid-cut-sparks-warning-of-alarming-increase-in-hepatitis-transmission">US aid cut sparks warning of ‘alarming increase’ in hepatitis transmission</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="https://www.anews.com.tr/gallery/world/israeli-attacks-devastate-beit-lahiya-cemetery-in-northern-gaza"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/e92c8b/385/228/0/0/1216/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/israeli-attacks-devastate-beit-lahiya-cemetery-in-northern-gaza-1738659738140.jpg" alt="" /></a>
+                        <figcaption><a href="https://www.anews.com.tr/gallery/world/israeli-attacks-devastate-beit-lahiya-cemetery-in-northern-gaza">Israeli attacks devastate Beit Lahiya cemetery in Northern Gaza</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/health/2025/02/04/uk-launches-major-ai-breast-cancer-screening-trial"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/24b148/385/228/0/0/627/371?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/uk-launches-major-ai-breast-cancer-screening-trial-1738658634457.jpeg" alt="" /></a>
+                        <figcaption><a href="/health/2025/02/04/uk-launches-major-ai-breast-cancer-screening-trial">UK launches major AI breast cancer screening trial</a></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <figure class="item">
+                        <a href="/world/2025/02/04/greenland-to-ban-foreign-anonymous-election-donations-ahead-of-spring-vote"><img src="https://i.tmgrup.com.tr/i/i.gif" class="lazy" data-original="https://ia.tmgrup.com.tr/13f31c/385/228/0/9/1200/720?u=https://i.tmgrup.com.tr/anews/v1/2025/02/04/greenland-to-ban-foreign-anonymous-election-donations-ahead-of-spring-vote-1738658351602.jpeg" alt="" /></a>
+                        <figcaption><a href="/world/2025/02/04/greenland-to-ban-foreign-anonymous-election-donations-ahead-of-spring-vote">Greenland to ban foreign, anonymous election donations ahead of spring vote</a></figcaption>
+                    </figure>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="gallerySliderFrame">
+        <div class="container">
+            <div class="topRow">
+                <h3 class="sectionTitle"> Gallery</h3>
+                <a href="/gallery" class="buttonLink navyBtn">View All</a>
+            </div>
+        </div>
+    <span class="pagingInfo"></span>
+    <div class="swiper-container gallerySlider">
+        <div class="swiper-wrapper">
+                <figure class="swiper-slide item">
+                    <a href="/gallery/world/firefighter-and-rescued-cat-enkaz-forge-unbreakable-bond"><img src="https://ia.tmgrup.com.tr/bd7cbc/781/391/0/53/1280/694?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/04/1738668301756.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/world/firefighter-and-rescued-cat-enkaz-forge-unbreakable-bond">
+                            <strong>Firefighter and rescued cat &#39;Enkaz&#39; forge unbreakable bond</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="swiper-slide item">
+                    <a href="/gallery/world/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid"><img src="https://ia.tmgrup.com.tr/1c4e88/781/391/0/64/1280/704?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/04/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid-1738667500809.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/world/15th-goodness-ship-sets-sail-for-gaza-with-humanitarian-aid">
+                            <strong>15th Goodness Ship sets sail for Gaza with humanitarian aid</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="swiper-slide item">
+                    <a href="/gallery/world/israeli-attacks-devastate-beit-lahiya-cemetery-in-northern-gaza"><img src="https://ia.tmgrup.com.tr/0f242f/781/391/0/33/1280/673?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/04/1738659528079.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/world/israeli-attacks-devastate-beit-lahiya-cemetery-in-northern-gaza">
+                            <strong>Israeli attacks devastate Beit Lahiya cemetery in Northern Gaza</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="swiper-slide item">
+                    <a href="/gallery/islamic-belief/displaced-palestinians-return-to-northern-gaza"><img src="https://ia.tmgrup.com.tr/555cc1/781/391/0/53/1280/694?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/04/1738657866502.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/islamic-belief/displaced-palestinians-return-to-northern-gaza">
+                            <strong>Displaced Palestinians return to Northern Gaza</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="swiper-slide item">
+                    <a href="/gallery/world/citizens-evacuated-from-santorini-due-to-seismic-activity"><img src="https://ia.tmgrup.com.tr/812750/781/391/0/23/1280/663?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/04/citizens-evacuated-from-santorini-due-to-seismic-activity-1738656552525.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/world/citizens-evacuated-from-santorini-due-to-seismic-activity">
+                            <strong>Citizens evacuated from Santorini due to seismic activity</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="swiper-slide item">
+                    <a href="/gallery/turkey/turkiyes-1st-homegrown-short-range-missile-tayfun-does-new-test-firing"><img src="https://ia.tmgrup.com.tr/d54c01/781/391/0/0/800/400?u=https://i.tmgrup.com.tr/anews/v1/album/2025/02/03/turkiyes-1st-homegrown-short-range-missile-tayfun-does-new-test-firing-1738595039048.jpg" alt="" /></a>
+                    <figcaption>
+                        <a href="/gallery/turkey/turkiyes-1st-homegrown-short-range-missile-tayfun-does-new-test-firing">
+                            <strong>T&#252;rkiye’s 1st homegrown short-range missile Tayfun does new test firing</strong>
+                        </a>
+                    </figcaption>
+                </figure>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<!-- gallerySliderFrame End -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var mySwiper3 = new Swiper('.gallerySliderFrame .swiper-container', {
+
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 2, //looped slides should be the same
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.gallerySliderFrame .swiper-button-next',
+                prevEl: '.gallerySliderFrame .swiper-button-prev',
+            },
+            pagination: {
+                el: '.gallerySliderFrame .swiper-pagination',
+                type: 'fraction',
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 'auto',
+
+
+                },
+            }
+        });
+
+    });
+</script>
+
+
+
+
+
+
+
+    
+
+    
+<footer>
+    <div class="footerRow">
+        <div class="container">
+            <a href="/" class="footLogo"><img src="https://i.tmgrup.com.tr/anews/site/v2/i/a-news-logo.png" alt="" /></a>
+            <nav class="footerMenu">
+                
+                <ul>
+                    <li>
+                        <a href="/world"> WORLD</a>
+                    </li>
+                    <li>
+                        <a href="/politics"> POLITICS</a>
+                    </li>
+                    <li>
+                        <a href="/economy"> ECONOMY</a>
+                    </li>
+                    <li>
+                        <a href="/sport"> SPORTS</a>
+                    </li>
+                    <li>
+                        <a href="/magazine"> MAGAZINE</a>
+                    </li>
+                    <li>
+                        <a href="/art"> ART</a>
+                    </li>
+                    <li>
+                        <a href="/health"> HEALTH</a>
+                    </li>
+                    <li>
+                        <a href="/webtv"> VIDEOS</a>
+                    </li>
+                    <li>
+                        <a href="/gallery"> PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="/webtv/live-broadcast"> LIVE TV</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footerSocial">
+                <li><a href="https://www.facebook.com/anews" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/anews" target="_blank"><i class="fa fa-x" aria-hidden="true"></i></a></li>
+                <li><a href="/rss-bilgi"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerLiteMenu">
+        <div class="container">
+            <ul>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/terms-of-conditions">Terms of Conditions</a></li>
+                <li><a href="/cookies">Cookies</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="javascript:;" onclick="document.getElementById('contactLink').click()">Contact Us</a></li>
+                <li><a href="/frequencies">Frequencies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerLogos">
+        <div class="container">
+            
+            
+
+
+
+
+<div class="fGeneral">
+    <script>
+
+     var f = document.getElementsByClassName("fGeneral")[0],
+         fctrl = true;
+
+     function isHidden(el) {
+         var style = window.getComputedStyle(el);
+         return ((style.display === 'none') || (style.visibility === 'hidden'))
+     }
+
+     window.addEventListener("scroll", function () {
+
+         var o = (f.getBoundingClientRect().top + window.scrollY),
+             t = window.pageYOffset !== undefined ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
+             n = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+         if (isHidden(f) || !fctrl) return;
+
+         else if ((t + 10) > (o - n)) {
+
+             fctrl = false;
+
+             var ajax = new XMLHttpRequest();
+
+             ajax.open("GET", "https://i.tmgrup.com.tr/footer/iframes/v2/generalEN.html?v735", true);
+
+             ajax.send();
+
+             ajax.onreadystatechange = function () {
+
+                 if (ajax.readyState == 4 && ajax.status == 200) {
+
+                     var data = ajax.responseText,
+                         el = document.getElementsByClassName("fGeneral")[0],
+                         elChild = document.createElement('div');
+
+                     data = data.replace(/{copyrightYear}/g, "2025");
+
+                     data = data.replace(/Copyright © 2021/g, "Copyright © 2025");
+                     elChild.innerHTML = data;
+                     el.appendChild(elChild);
+                 }
+             }
+
+         }
+
+     });
+
+    </script>
+</div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="opacity-bg"></div>
+
+    
+
+<div data-mbzone="PageOverlay" data-wbzone="PageOverlay"></div>
+<div data-mbzone="AdvCounter" data-wbzone="AdvCounter"></div>
+
+<script>var canRunAds=!1</script><script src=https://ad01.tmgrup.com.tr/bd/dfp/js/sabahads.js></script><script>function bdCheckBlk(){var i=deviceInfo.isMobile==!0?"mobile":"desktop",n,t;canRunAds==!0?(console.log("ads:"+canRunAds),bdGetCookie("blk_control")==null&&(n="BLK_"+i+"_NOTFOUND",ga("send","event",n,n,n),t=new Date,t.setDate(t.getDate()+5),bdSetCookie("blk_control","1",t.toGMTString(),"/"))):(console.log("ads:"+canRunAds),bdGetCookie("blk_control")==null&&(n="BLK_"+i+"_FOUND",ga("send","event",n,n,n),t=new Date,t.setDate(t.getDate()+5),bdSetCookie("blk_control","1",t.toGMTString(),"/")))}$(document).ready(function(){bdCheckBlk()})</script>
+
+    <script type="text/javascript">
+        var _kvkkLang = "en";
+        var _kvkkLink = "/terms-of-conditions";
+    </script>
+
+
+<script type="text/javascript" src="https://i.tmgrup.com.tr/tmd-consent/j/tmd-kvkk.js"></script>
+
+<!-- Push Notification -->
+<script src="https://i.tmgrup.com.tr/tmdwebpush/tmdwebpush.js?v=735" defer></script>
+<!-- Push Notification -->
+
+</body>
+</html>

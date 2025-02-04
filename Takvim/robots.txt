@@ -1,0 +1,28 @@
+User-agent: *
+Sitemap: https://www.takvim.com.tr/sitemap/news.xml
+Sitemap: https://www.takvim.com.tr/sitemap/index.xml
+
+Disallow: /arama*
+Disallow: /habergonder*
+Disallow: /?web=true*
+Disallow: /*?reklam=*
+Disallow: /haberadvertorial  
+
+Disallow: /json
+Disallow: /ajax
+
+Disallow: /webtv/iframe/video*
+Disallow: /31110078/*
+Disallow: /iframe/*
+Disallow: /video/iframe/
+
+Disallow: /yorum/*
+Disallow: /yorumoku/*
+
+Disallow: /turkiye-kupasi
+
+Disallow: /canli-skor
+
+Disallow: /secim/
+
+Disallow: *getcandidatetopinfo*

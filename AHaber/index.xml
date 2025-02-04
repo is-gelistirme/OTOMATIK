@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/news.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/post.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/video.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/tags.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/tagsdaily.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/image.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ahaber.com.tr/sitemap/category.xml</loc>
+  </sitemap>
+</sitemapindex>

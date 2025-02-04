@@ -1,0 +1,28 @@
+User-agent: *
+
+Sitemap: https://www.ahaber.com.tr/sitemap/news.xml
+Sitemap: https://www.ahaber.com.tr/sitemap/index.xml
+
+Disallow: /bize-ulasin
+Disallow: /haber/advertorial
+Disallow: /haberadvertorial
+Disallow: /arama
+Disallow: /webtv/iframe/*
+Disallow: /video/iframe/*
+Disallow: /iframe/*
+Disallow: /json
+Disallow: /ajax
+Disallow: /js
+Disallow: /partial
+Disallow: /infinite/article/*
+
+Disallow: /yorum/*
+Disallow: /yorumoku/*
+
+Disallow: /turkiye-kupasi
+
+Disallow: /canli-skor
+
+Disallow: /secim/
+
+Disallow: *getcandidatetopinfo*
