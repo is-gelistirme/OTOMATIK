@@ -25,7 +25,7 @@
 
 
 
-    <link rel="preload" as="script" href="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.3.6.4.min.js?v=19295">
+    <link rel="preload" as="script" href="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.3.6.4.min.js?v=19321">
 
     <link rel="preload" as="script" href="https://i.tmgrup.com.tr/tmd/usercountryv2.js?v=735">
 
@@ -93,7 +93,7 @@
     <link rel="dns-prefetch" href="//imasdk.googleapis.com">
 
 
-    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.3.6.4.min.js?v=19295" ></script>
+    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.3.6.4.min.js?v=19321" ></script>
 
 
 
@@ -102,12 +102,12 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/bootstrap-grid.css?v=19295" />
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/swiper.min.css?v=19295" />
-    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/swiper.min.js?v=19295" ></script>
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/main.css?v=19295" />
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/header.css?v=19295" />
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/mansetSlider.css?v=19295" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/bootstrap-grid.css?v=19321" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/swiper.min.css?v=19321" />
+    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/swiper.min.js?v=19321" ></script>
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/main.css?v=19321" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/header.css?v=19321" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/mansetSlider.css?v=19321" />
 
 <script>
     const axiTiming = (() => { const e = (() => { let e, t; const n = () => { const e = {}, t = { setTimeout: (t, n, s) => { e[n] = setTimeout((() => { t.postMessage(n), e[n] = null }), s) }, setInterval: (t, n, s) => { e[n] = setInterval((() => { t.postMessage(n) }), s) }, clearTimeout: (t, n) => { clearTimeout(e[n]), e[n] = null }, clearInterval: (t, n) => { clearInterval(e[n]), e[n] = null } }, n = (e, n) => { const [s, r, o] = n.data; t[s] && t[s](e, r, o) }; onmessage = e => { n(self, e) }, onconnect = e => { const t = e.ports[0]; t.onmessage = e => { n(t, e) } } }; try { const e = new Blob(["(", n.toString(), ")()"], { type: "application/javascript" }); t = URL.createObjectURL(e) } catch (e) { return null } return Worker ? (e = new Worker(t), e) : null })(); if (!e) return { setTimeout: setTimeout.bind(window), clearTimeout: clearTimeout.bind(window), setInterval: setInterval.bind(window), clearInterval: clearInterval.bind(window) }; const t = (() => { let e = 0; return () => ++e })(), n = {}, s = {}; e.onmessage = e => { const t = e.data, r = n[t]; if (r) return r(), void (n[t] = null); const o = s[t]; o && o() }; return { setTimeout: (s, r) => { const o = t(); return e.postMessage(["setTimeout", o, r]), n[o] = s, o }, clearTimeout: t => { e.postMessage(["clearTimeout", t]), n[t] = null }, setInterval: (n, r) => { const o = t(); return e.postMessage(["setInterval", o, r]), s[o] = n, o }, clearInterval: t => { e.postMessage(["clearInterval", t]), s[t] = null } } })();
@@ -121,7 +121,7 @@
             PageType: "VideoAnasayfa",
             HasMobile: false,
             ImageServer: "https://isbh.tmgrup.com.tr/sbh/site/v3",
-            StaticFilesVersion: "?v=19295",
+            StaticFilesVersion: "?v=19321",
             LazyLoadImage: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
             MultiLazyLoad: true,
             JwplayerKey: "lAEHxPKncoKBhP9Z1NKg/CF7VZF8La81Q0kYzQ=="
@@ -188,22 +188,22 @@
 <script>
     var MobileDetect = function () { function t(t) { this.isTablet = !1, this.isPhone = !1, this.isDesktop = !1, this.detect(t) } return t.prototype.detect = function (t) { var e = t.toLowerCase(); /ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP)))/.test(e) ? this.isTablet = !0 : /mobi|ipod|phone|blackberry|opera mini|fennec|minimo|symbian|psp|nintendo ds|archos|skyfire|puffin|blazer|bolt|gobrowser|iris|maemo|semc|teashark|uzard/.test(e) ? this.isPhone = !0 : this.isDesktop = !0 }, t.prototype.phone = function () { return this.isPhone }, t.prototype.tablet = function () { return this.isTablet }, t.prototype.desktop = function () { return this.isDesktop }, t }(), md = new MobileDetect(window.navigator.userAgent); window.deviceInfo = { isMobile: md.phone(), isTablet: md.tablet() };
 </script>
-    <script async  src="https://i.tmgrup.com.tr/tmd-consent/j/tmdconsent-v2.1.js?v=19295" ></script>
+    <script async  src="https://i.tmgrup.com.tr/tmd-consent/j/tmdconsent-v2.1.js?v=19321" ></script>
 
 
 
-    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.cookie.js?v=19295" ></script>
+    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery.cookie.js?v=19321" ></script>
 
 
 
-    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/touchswipe.min.1.6.18.js?v=19295" ></script>
-    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery-ui.min.js?v=19295" ></script>
-    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/lscache.min.js?v=19295" ></script>
+    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/touchswipe.min.1.6.18.js?v=19321" ></script>
+    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/jquery-ui.min.js?v=19321" ></script>
+    <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/lscache.min.js?v=19321" ></script>
 
-<script>let baseAssetSrv = { uri: 'https://isbh.tmgrup.com.tr/sbh/site/v4',ver:'?v=19295' }</script>
-    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/video/j/main.js?v=19295" ></script>
+<script>let baseAssetSrv = { uri: 'https://isbh.tmgrup.com.tr/sbh/site/v4',ver:'?v=19321' }</script>
+    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/video/j/main.js?v=19321" ></script>
 
-    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/custom.js?v=19295" ></script>
+    <script defer  src="https://isbh.tmgrup.com.tr/sbh/site/v4/j/custom.js?v=19321" ></script>
 
 
 
@@ -1887,6 +1887,36 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                             <div class="swiper-slide">
+                                <a href="/video/yasam/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-video" target="_blank">
+                                    <div class="mansetImg">
+                                        <div class="headlineView">
+                                            <picture>
+                                                <source srcset="https://iasbh.tmgrup.com.tr/faee0c/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-1738676372589.jpeg" media="(min-width: 576px)">
+                                                <img loading="lazy" decoding="async" class="swiper-lazy" src="https://iasbh.tmgrup.com.tr/faee0c/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-1738676372589.jpeg" alt="Taksiciye dehşeti yaşatan gasp&#231;ı hakim karşısında">
+
+                                            </picture>
+
+                                        </div>
+                                        <span class="mansetTitle">Taksiciye dehşeti yaşatan gasp&#231;ı hakim karşısında</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="/video/yasam/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video" target="_blank">
+                                    <div class="mansetImg">
+                                        <div class="headlineView">
+                                            <picture>
+                                                <source srcset="https://iasbh.tmgrup.com.tr/81e251/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video-1738677115756.jpeg" media="(min-width: 576px)">
+                                                <img loading="lazy" decoding="async" class="swiper-lazy" src="https://iasbh.tmgrup.com.tr/81e251/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video-1738677115756.jpeg" alt="Beyaz &#246;rt&#252;yle kaplanan ormanlar b&#246;yle g&#246;r&#252;nt&#252;lendi">
+
+                                            </picture>
+
+                                        </div>
+                                        <span class="mansetTitle">Beyaz &#246;rt&#252;yle kaplanan ormanlar b&#246;yle g&#246;r&#252;nt&#252;lendi</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
                                 <a href="/video/yasam/yalovada-uyusturucu-operasyonlarinda-5-zanli-tutuklandi-video" target="_blank">
                                     <div class="mansetImg">
                                         <div class="headlineView">
@@ -1916,36 +1946,6 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="/video/yasam/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video" target="_blank">
-                                    <div class="mansetImg">
-                                        <div class="headlineView">
-                                            <picture>
-                                                <source srcset="https://iasbh.tmgrup.com.tr/196898/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video-1738670359946.jpeg" media="(min-width: 576px)">
-                                                <img loading="lazy" decoding="async" class="swiper-lazy" src="https://iasbh.tmgrup.com.tr/196898/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video-1738670359946.jpeg" alt="Oğlu tarafından t&#252;fekle &#246;ld&#252;r&#252;len anne son yolculuğuna uğurlandı">
-
-                                            </picture>
-
-                                        </div>
-                                        <span class="mansetTitle">Oğlu tarafından t&#252;fekle &#246;ld&#252;r&#252;len anne son yolculuğuna uğurlandı</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/video/yasam/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video" target="_blank">
-                                    <div class="mansetImg">
-                                        <div class="headlineView">
-                                            <picture>
-                                                <source srcset="https://iasbh.tmgrup.com.tr/e9091d/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video-1738669266717.jpeg" media="(min-width: 576px)">
-                                                <img loading="lazy" decoding="async" class="swiper-lazy" src="https://iasbh.tmgrup.com.tr/e9091d/752/423/0/0/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video-1738669266717.jpeg" alt="Sakarya’da aranan şahıslara y&#246;nelik operasyonlar: 185 tutuklama">
-
-                                            </picture>
-
-                                        </div>
-                                        <span class="mansetTitle">Sakarya’da aranan şahıslara y&#246;nelik operasyonlar: 185 tutuklama</span>
-                                    </div>
-                                </a>
-                            </div>
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -1970,17 +1970,17 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
 
             <div class="litleNews">
                     <div class="litleNewsItem">
-                        <a href="/video/yasam/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663771">
+                        <a href="/video/yasam/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video">
                             <i class="flaticon flaticon-play-rounded-button"></i>
-                            <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/1384dc/172/95/0/15/1920/1076?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663663175.jpeg" alt="Arnavutköy’de fidye ve gasp çetesi çökertildi" width="172" height="95">
-                            <span>Arnavutk&#246;y’de fidye ve gasp &#231;etesi &#231;&#246;kertildi</span>
+                            <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/0eaa88/172/95/0/19/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video-1738670359946.jpeg" alt="Oğlu tarafından tüfekle öldürülen anne son yolculuğuna uğurlandı" width="172" height="95">
+                            <span>Oğlu tarafından t&#252;fekle &#246;ld&#252;r&#252;len anne son yolculuğuna uğurlandı</span>
                         </a>
                     </div>
                     <div class="litleNewsItem">
-                        <a href="/video/yasam/depremin-2-yil-donumunde-hatayin-yaralari-sariliyor-video">
+                        <a href="/video/yasam/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video">
                             <i class="flaticon flaticon-play-rounded-button"></i>
-                            <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/87dd30/172/95/0/0/1920/1060?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/depremin-2-yil-donumunde-hatayin-yaralari-sariliyor-video-1738662840794.jpeg" alt="Depremin 2. yıl dönümünde Hatay’ın yaraları sarılıyor" width="172" height="95">
-                            <span>Depremin 2. yıl d&#246;n&#252;m&#252;nde Hatay&#39;ın yaraları sarılıyor</span>
+                            <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/9930a9/172/95/0/0/1920/1060?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video-1738669266717.jpeg" alt="Sakarya’da aranan şahıslara yönelik operasyonlar: 185 tutuklama" width="172" height="95">
+                            <span>Sakarya’da aranan şahıslara y&#246;nelik operasyonlar: 185 tutuklama</span>
                         </a>
                     </div>
             </div>
@@ -2136,6 +2136,53 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
             <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="borderBoxes">
+                            <a href="/video/yasam/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-video" class="objectImg">
+                                <i class="flaticon flaticon-play-rounded-button"></i>
+                                <picture>
+                                    <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/42a3c3/356/199/0/0/1920/1072?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-1738676372589.jpeg" alt="Taksiciye dehşeti yaşatan gasp&#231;ı hakim karşısında">
+                                </picture>
+                                    <span class="time">01:16</span>
+                            </a>
+                            <div class="borderBoxItem">
+                                <a href="/video/yasam/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-video" class="objectListName">Taksiciye dehşeti yaşatan gasp&#231;ı hakim karşısında | Video</a>
+                                <div class="objectCategory">
+                                    <a href="/video/yasam/taksiciye-dehseti-yasatan-gaspci-hakim-karsisinda-video">
+                                            <span>Yaşam</span>
+
+                                        <i>04 Şubat 2025 | 16:39</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="borderBoxes">
+                            <a href="/video/yasam/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video" class="objectImg">
+                                <i class="flaticon flaticon-play-rounded-button"></i>
+                                <picture>
+                                    <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/4ab339/356/199/0/0/1920/1072?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video-1738677115756.jpeg" alt="Beyaz &#246;rt&#252;yle kaplanan ormanlar b&#246;yle g&#246;r&#252;nt&#252;lendi">
+                                </picture>
+                                    <span class="time">04:27</span>
+                            </a>
+                            <div class="borderBoxItem">
+                                <a href="/video/yasam/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video" class="objectListName">Beyaz &#246;rt&#252;yle kaplanan ormanlar b&#246;yle g&#246;r&#252;nt&#252;lendi | Video</a>
+                                <div class="objectCategory">
+                                    <a href="/video/yasam/beyaz-ortuyle-kaplanan-ormanlar-boyle-goruntulendi-video">
+                                            <span>Yaşam</span>
+
+                                        <i>04 Şubat 2025 | 16:52</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="adbImg pad0">
+                                <div class="item" data-showifexist><div data-mbzone="300x250_infinite" data-wbzone="300x250_infinite"></div></div>
+                            </div>
+                        </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="borderBoxes">
                             <a href="/video/yasam/yalovada-uyusturucu-operasyonlarinda-5-zanli-tutuklandi-video" class="objectImg">
                                 <i class="flaticon flaticon-play-rounded-button"></i>
                                 <picture>
@@ -2176,11 +2223,6 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
                             </div>
                         </div>
                     </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="adbImg pad0">
-                                <div class="item" data-showifexist><div data-mbzone="300x250_infinite" data-wbzone="300x250_infinite"></div></div>
-                            </div>
-                        </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="borderBoxes">
                             <a href="/video/yasam/oglu-tarafindan-tufekle-oldurulen-anne-son-yolculuguna-ugurlandi-video" class="objectImg">
@@ -2197,48 +2239,6 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
                                             <span>Yaşam</span>
 
                                         <i>04 Şubat 2025 | 14:59</i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="borderBoxes">
-                            <a href="/video/yasam/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video" class="objectImg">
-                                <i class="flaticon flaticon-play-rounded-button"></i>
-                                <picture>
-                                    <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/f88d48/356/199/0/0/1920/1072?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video-1738669266717.jpeg" alt="Sakarya’da aranan şahıslara y&#246;nelik operasyonlar: 185 tutuklama">
-                                </picture>
-                                    <span class="time">00:36</span>
-                            </a>
-                            <div class="borderBoxItem">
-                                <a href="/video/yasam/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video" class="objectListName">Sakarya’da aranan şahıslara y&#246;nelik operasyonlar: 185 tutuklama | Video</a>
-                                <div class="objectCategory">
-                                    <a href="/video/yasam/sakaryada-aranan-sahislara-yonelik-operasyonlar-185-tutuklama-video">
-                                            <span>Yaşam</span>
-
-                                        <i>04 Şubat 2025 | 13:46</i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="borderBoxes">
-                            <a href="/video/yasam/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663771" class="objectImg">
-                                <i class="flaticon flaticon-play-rounded-button"></i>
-                                <picture>
-                                    <img loading="lazy" decoding="async" src="https://iasbh.tmgrup.com.tr/3c23c3/356/199/0/7/1920/1080?u=https://isbh.tmgrup.com.tr/sbh/2025/02/04/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663663175.jpeg" alt="Arnavutk&#246;y’de fidye ve gasp &#231;etesi &#231;&#246;kertildi">
-                                </picture>
-                                    <span class="time">03:06</span>
-                            </a>
-                            <div class="borderBoxItem">
-                                <a href="/video/yasam/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663771" class="objectListName">Arnavutk&#246;y’de fidye ve gasp &#231;etesi &#231;&#246;kertildi | Video</a>
-                                <div class="objectCategory">
-                                    <a href="/video/yasam/arnavutkoyde-fidye-ve-gasp-cetesi-cokertildi-video-1738663771">
-                                            <span>Yaşam</span>
-
-                                        <i>04 Şubat 2025 | 13:07</i>
                                     </a>
                                 </div>
                             </div>
@@ -2380,7 +2380,7 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
     
 
 
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/liveSlider.css?v=19295" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/video/c/liveSlider.css?v=19321" />
 
 
 <section class="liveWatch">
@@ -2741,7 +2741,7 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
     
 
 
-    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/c/footer-new-pspd.css?v=19295" />
+    <link rel="stylesheet" type="text/css" href="https://isbh.tmgrup.com.tr/sbh/site/v4/c/footer-new-pspd.css?v=19321" />
 
 <footer class="siteFooter">
     
@@ -3011,8 +3011,8 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
                 </div>
 
             <a href="https://egazete.sabah.com.tr" title="Sabah EGazete" target="_blank">
-                <img loading="lazy" decoding="async" src="https://i.tmgrup.com.tr/egazete/ilk-sayfalar/2025/02/04/164x236/04SBH01.jpg?v=19295"
-                     alt="4 Şubat 2025 Tarihli Sabah EGazete"
+                <img loading="lazy" decoding="async" src="https://i.tmgrup.com.tr/egazete/ilk-sayfalar/2025/02/05/164x236/05SBH01.jpg?v=19321"
+                     alt="5 Şubat 2025 Tarihli Sabah EGazete"
                      width="134"
                      height="236"
                      class="newsPaper lazy">
@@ -3100,7 +3100,7 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
     let axisInstances;
     baseAssetSrv = {
         uri: 'https://isbh.tmgrup.com.tr/sbh/site/v4/video',
-        ver: '?v=19295',
+        ver: '?v=19321',
         origin: window.location.origin.toString(),
         hostname: window.location.hostname.toString(),
         protocol: window.location.protocol.toString()
@@ -3122,13 +3122,13 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
 
 
     
-        <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/sabahTV/j/mansetSlider.js?v=19295" ></script>
+        <script  src="https://isbh.tmgrup.com.tr/sbh/site/v4/sabahTV/j/mansetSlider.js?v=19321" ></script>
 
 
 
     
 
-    <script  src="https://i.tmgrup.com.tr/tmd/tmdsurvey.js?v=19295" ></script>
+    <script  src="https://i.tmgrup.com.tr/tmd/tmdsurvey.js?v=19321" ></script>
 
 
                     <script type="text/javascript">
@@ -3152,7 +3152,7 @@ AdDev.AddApsTag();</script><script async=async src=https://cdn-native.pigeoon.co
     var tmdContactUs_PageType = 'Video';
 </script>
 
-    <script async  src="https://i.tmgrup.com.tr/contactus/j/contactus.js?v=19295" ></script>
+    <script async  src="https://i.tmgrup.com.tr/contactus/j/contactus.js?v=19321" ></script>
 
 
 <a href="https://www.sabah.com.tr" class="stickyLink gdprRemove" id="contactLink"> SON DAKİKA </a>

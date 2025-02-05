@@ -1,6 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.fikriyat.com/galeri/gundem/gecmisten-gunumuze-kesmir-meselesi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Fikriyat</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-05T08:52:42+03:00</news:publication_date>
+      <news:title><![CDATA[Geçmişten günümüze Keşmir Meselesi]]></news:title>
+      <news:keywords><![CDATA[Babür İmparatorluğu, Bangladeş, Birleşik Krallık, Çin, Doğu Türkistan, Dünya Savaşları, Güney Asya, Hindistan, İngiliz, İngiltere, Keşmir meselesi, Keşmir Sopore, Keşmir Sorunu, Keşmir, Myanmar, Pakistan, Uygur Türklerin]]></news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.fikriyat.com/galeri/tarih/erhan-afyoncudan-yakin-tarih-dersleri</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Fikriyat</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-04T19:11:24+03:00</news:publication_date>
+      <news:title><![CDATA[Erhan Afyoncu'dan Yakın Tarih Dersleri]]></news:title>
+      <news:keywords><![CDATA[1856, 93 Harbi, Avrupa, çırağan baskını, Erhan Afyoncu, Il, Jön Türkler, Kanun ı Esasi, Osmanlı Devleti, Osmanlı İmparatorluğu, Osmanlı padişah tu, Paris Antlaşması, Türkiye, yıldız sarayı]]></news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.fikriyat.com/webtv/yasam/insanin-insana-eslik-etmesi-icin-sadece-cabasi-yeterli-oluyor-i-6-subat-depremleri-i-fikriyat</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Fikriyat</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-04T17:54:05+03:00</news:publication_date>
+      <news:title><![CDATA[İnsanın insana eşlik etmesi için sadece çabası yeterli oluyor I 6 Şubat Depremleri]]></news:title>
+      <news:keywords><![CDATA[Esra Dalkılıç, 6 şubat deprem, Asrın felaket, Maraş, 6 Şubat depremleri]]></news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.fikriyat.com/galeri/kultur-sanat/turk-dunyasinin-7-harikasi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Fikriyat</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-04T16:47:59+03:00</news:publication_date>
+      <news:title><![CDATA[Türk dünyasının 7 harikası]]></news:title>
+      <news:keywords><![CDATA[Avazi Semerkandi, Azerbaycan, Emir Timur, Göktürk Kitabeleri, Karakum, Kazakistan, Kırgızistan, Moğolistan, Orhun Yazıtları Müzesi, Özbekistan, TİKA, Timur İmparatorluğu, Türk dünyasının, Türkiye, Türkmenistan]]></news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.fikriyat.com/dunya/2025/02/04/tobbda-turkiye-azerbaycan-ozbekistan-uclu-is-forumu-duzenlendi</loc>
     <news:news>
       <news:publication>
@@ -358,30 +406,6 @@
       <news:publication_date>2025-02-03T08:48:37+03:00</news:publication_date>
       <news:title><![CDATA[Bosna'da fethin sembolü: Kuşlat Camii]]></news:title>
       <news:keywords><![CDATA[Avrupa, Balkan, Balkanlar, Bosna Hersek, BOSNA, Drina neh, Fatih Sultan Mehmed Han, Hersek, İstanbul, KANUNİ SULTAN SÜLEYMAN, Kuşlat Camii, Kuşlat Kalesi, Mohaç Savaşı, Osmanlı İmparatorluğu, Osmanlı Macar Savaşı, Zvornik Sancağı]]></news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.fikriyat.com/galeri/yasam/6-subati-unutmayalim-ve-unutturmayalim</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Fikriyat</news:name>
-        <news:language>tr</news:language>
-      </news:publication>
-      <news:publication_date>2025-02-02T16:42:35+03:00</news:publication_date>
-      <news:title><![CDATA[6 Şubat'ı unutmayalım ve unutturmayalım I 6 Şubat Depremleri]]></news:title>
-      <news:keywords><![CDATA[6 Şubat]]></news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.fikriyat.com/webtv/yasam/6-subati-unutmayalim-unutturmayalim</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Fikriyat</news:name>
-        <news:language>tr</news:language>
-      </news:publication>
-      <news:publication_date>2025-02-02T16:33:52+03:00</news:publication_date>
-      <news:title><![CDATA[6 Şubat'ı unutmayalım, unutturmayalım I 6 Şubat Depremleri I Fikriyat]]></news:title>
-      <news:keywords><![CDATA[Ebrar Yılmaz, Kahramanmaraş, 6 Şubat depremleri]]></news:keywords>
     </news:news>
   </url>
 </urlset>
